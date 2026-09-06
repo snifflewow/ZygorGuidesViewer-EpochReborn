@@ -1,0 +1,28 @@
+# Packaging artifacts
+*.zip
+*.7z
+*.rar
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Lua tooling
+luahelper.json
+.luacheckcache
+
+# Local scratch and backups
+*.bak
+*.orig
+*.rej
+*.log
+backup/
+scratch/
+
+# Never commit SavedVariables
+WTF/

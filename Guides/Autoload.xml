@@ -1,0 +1,42 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+
+	<!-- Autoloading of included guides. Add your Guide##.lua files here as you please. -->
+	
+	<Script file="Leveling\ZygorGuidesAlliance.lua"/>
+	<Script file="Leveling\ZygorGuidesHorde.lua"/>
+	
+	
+
+	<!-- DUNGEONS -->
+		<!-- CLASSIC -->
+		<Script file="Dungeons\ZygorDungeonAllianceCLASSIC.lua"/>
+		<Script file="Dungeons\ZygorDungeonHordeCLASSIC.lua"/>
+
+	<!-- Original Zygor Guide -->
+
+		<Script file="OriginalZygor\HordeUndead.lua"/>
+		<Script file="OriginalZygor\HordeTroll.lua"/>
+		<Script file="OriginalZygor\HordeTauren.lua"/>
+		<Script file="OriginalZygor\HordeOrc.lua"/>
+		<Script file="OriginalZygor\Horde13-20.lua"/>
+		<Script file="OriginalZygor\Horde20-25.lua"/>
+		<Script file="OriginalZygor\Horde25-30.lua"/>
+		<Script file="OriginalZygor\Horde30-35.lua"/>
+		<Script file="OriginalZygor\Horde35-40.lua"/>
+		<Script file="OriginalZygor\Horde40-45.lua"/>
+		<Script file="OriginalZygor\Horde45-50.lua"/>
+		<Script file="OriginalZygor\Horde50-55.lua"/>
+		<Script file="OriginalZygor\Horde55-60.lua"/>
+
+		<Script file="OriginalZygor\Alliance.lua"/>
+
+	<!-- EPOCH -->
+
+		<Script file="EPOCH\1-6Orc.lua"/>
+		<Script file="EPOCH\1-6Troll.lua"/>
+		<Script file="EPOCH\6-13Durotar.lua"/>
+		
+
+</Ui>

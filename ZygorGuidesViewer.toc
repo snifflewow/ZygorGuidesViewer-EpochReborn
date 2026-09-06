@@ -1,0 +1,25 @@
+## Interface: 30300
+## Notes: Leveling guide viewer for WoW 3.3.5a, adapted for Project Epoch / Epoch Reborn.
+## Title: |cffffff88Z|cffffee66y|cffffdd44g|cffffcc22o|cffffbb00r|r Guides Viewer
+## qqqTitle: |cffffff88Z|cffffee66y|cffffdd44g|cffffcc22o|cffffbb00r|r Guides Viewer |TInterface\AddOns\ZygorGuidesViewer\Skin\gnome:48:48:0:0|t
+## Author: Huge
+## DefaultState: enabled
+## LoadOnDemand: 0
+## SavedVariables: ZygorGuidesViewerSettings
+## - SavedVariablesPerCharacter: ZygorGuidesViewerSettingsChar
+## OptionalDeps: Cartographer, Cartographer3, TomTom
+## X-Category: Quests & Leveling
+## X-Credits: Zygor Guides (original addon and guides), TUG (original route and initial 3.3.5 port), Simon Gaufreteau (Epoch community port this fork started from)
+## X-eMail: 
+## X-Website: https://github.com/YOUR-USERNAME/YOUR-REPO
+## X-License: GPL
+## Version: 0.1.80
+
+embeds.xml
+
+Localization\load.xml
+Localization\names.xml
+
+files.xml
+
+Guides\Autoload.xml

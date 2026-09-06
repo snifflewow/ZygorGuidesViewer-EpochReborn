@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/FrameXML/UI.xsd">
+
+	<Script file="Skins.lua"/>
+	<Script file="Skin.lua"/>
+
+	<!-- Styles. Add a new one by dropping Style-<id>.lua in Styles\ and listing it here. -->
+	<Script file="Styles\Style-base.lua"/>
+	<Script file="Styles\Style-violet.lua"/>
+	<Script file="Styles\Style-green.lua"/>
+	<Script file="Styles\Style-blue.lua"/>
+	<Script file="Styles\Style-orange.lua"/>
+	<Script file="Styles\Style-modern.lua"/>
+
+</Ui>
