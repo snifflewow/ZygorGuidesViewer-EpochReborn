@@ -11,7 +11,7 @@
 ## X-Category: Quests & Leveling
 ## X-Credits: Zygor Guides (original addon and guides), TUG (original route and initial 3.3.5 port), Simon Gaufreteau (Epoch community port this fork started from)
 ## X-eMail: 
-## X-Website: https://github.com/YOUR-USERNAME/YOUR-REPO
+## X-Website: https://github.com/huge-x/ZygorGuidesViewer-EpochReborn
 ## X-License: GPL
 ## Version: 0.1.80
 

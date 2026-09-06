@@ -121,7 +121,7 @@ places. The `Epoch\` guides are the ones verified against Epoch.
 
 ## Writing guides
 
-Read **[GUIDE_SYNTAX.md](GUIDE_SYNTAX.md)**. 
+Read **[GUIDE_SYNTAX.md](Guides/GUIDE_SYNTAX.md)**.
 
 It was written by reading the parser, not by inferring from existing guides, 
 and it documents the behaviours that are
