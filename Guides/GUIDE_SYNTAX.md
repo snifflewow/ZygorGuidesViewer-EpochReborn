@@ -66,7 +66,7 @@ Then register it in `Guides/Autoload.xml`, or it will not load.
 
 ## 2 · The one rule that matters
 
-**A step ends when every *completeable* goal in it is done.**
+**A step ends when every *completable* goal in it is done.**
 
 Everything else is a consequence of that. So the important question for any line
 you write is: *does this line hold the step open, or not?*

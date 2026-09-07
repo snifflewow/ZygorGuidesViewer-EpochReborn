@@ -24,6 +24,7 @@ Save All Linen Cloth You Find
 .tip You will need ~70 Linen Cloth when you are level 10-11.
 .tip You will use them to create your wand, which will be a powerful weapon for you.
 .tip However, if you are confident you will be able to buy a wand from the Auction House (if this isn't a new or populated server), you can ignore this. |only if not selfmade
+|only if Priest
 step
 Click Here to Continue |confirm |q 456 |future
 |only if Priest
@@ -55,6 +56,7 @@ talk Keina##3589
 .tip Inside the building
 .tip Sell your goods from grinding.
 .tip Restock on ammo |only if Hunter
+.tip make a habit of vendoring trash everytime you are in town
 vendor Keina##3589 |goto Teldrassil/0 59.32,41.12 |q 456
 step
 talk Conservator Ilthalaine##2079

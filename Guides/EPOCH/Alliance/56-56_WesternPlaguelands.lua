@@ -8,12 +8,7 @@ end
 ZygorGuidesViewer:RegisterGuide(
   'Leveling Guides\\Western Plaguelands (56-56)',
   {
-    image = ZGV.IMAGESDIR .. 'Western Plaguelands',
-    condition_suggested = function()
-      return level == 56 and not completedq(5217)
-    end,
     next = 'Leveling Guides\\Burning Steppes (56-57)',
-    hardcore = true,
   },
   [[
 step
@@ -33,11 +28,11 @@ trainer Osborne the Night Man##918 |goto Stormwind City/0 74.54,52.80 |only if R
 trainer Sheldras Moontree##5504 |goto Stormwind City/0 20.92,55.52 |only if Druid |q 6028
 trainer Brother Benjamin##5484 |goto Stormwind City/0 41.64,28.98 |only if Priest |q 6028
 trainer Arthur the Faithful##5491 |goto Stormwind City/0 38.65,32.80 |only if Paladin |q 6028
-|tip Inside the tower. |only if Mage
-|tip Inside the building. |only if Hunter or Warrior or Priest or Paladin
-|tip He patrols inside. |only if Priest
-|tip In the basement. |only if Warlock
-|tip Train your spells.
+.tip Inside the tower. |only if Mage
+.tip Inside the building. |only if Hunter or Warrior or Priest or Paladin
+.tip He patrols inside. |only if Priest
+.tip In the basement. |only if Warlock
+.tip Train your spells.
 step
 talk High Priestess MacDonnell##11053
 accept Target: Felstone Field##5216 |goto Western Plaguelands 42.97,84.50
@@ -52,14 +47,14 @@ click Scourge Cauldron##176392
 turnin Target: Felstone Field##5216 |goto Western Plaguelands 37.19,56.87
 accept Return to Chillwind Camp##5217 |goto Western Plaguelands 37.19,56.87
 step
-Enter the building |goto Western Plaguelands 38.04,54.61 < 10 |walk
+Enter the building |goto Western Plaguelands,38.04,54.61,10 |walk
 talk Janice Felstone##10778
-|tip Upstairs inside the building.
+.tip Upstairs inside the building.
 accept Better Late Than Never##5021 |goto Western Plaguelands 38.40,54.05
 step
-Enter the building |goto Western Plaguelands 38.52,55.33 < 10 |walk
+Enter the building |goto Western Plaguelands,38.52,55.33,10 |walk
 click Janice's Parcel##175894
-|tip Inside the building.
+.tip Inside the building.
 turnin Better Late Than Never##5021 |goto Western Plaguelands 38.73,55.24
 accept Better Late Than Never##5022 |goto Western Plaguelands 38.73,55.24
 step
