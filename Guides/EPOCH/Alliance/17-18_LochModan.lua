@@ -407,5 +407,10 @@ turnin Aquatic Form##5061 |goto Darnassus 35.37,8.39
 use Hearthstone##6948
 .tip Hearth to Stormwind. |goto Stormwind City 60.4,75.2 |noway
 |only if NightElf Druid
+step
+Head to the Stormwind gates |goto Stormwind City 73.1,89.2
+Go down the road to Goldshire |goto Elwynn Forest 42.4,65.6
+Follow the road to Redridge |goto Elwynn Forest 92,73 |c
+.tip jump on a caravan if you see one going your way
 ]]
 )
