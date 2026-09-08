@@ -459,6 +459,7 @@ accept A Lesson to Learn##26 |goto Darnassus 35.37,8.39
 accept Lessons Anew##6121 |goto Darnassus 35.37,8.39
 |only if NightElf Druid
 step
+cast Teleport:Moonglade##18960
 talk Dendrite Starblaze##11802
 .tip Upstairs inside the building.
 turnin A Lesson to Learn##26 |goto Moonglade 56.21,30.64

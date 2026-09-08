@@ -824,6 +824,7 @@ trainer Jandria##4091 |goto Darnassus/0 37.91,82.80  |q 2518
 .tip Train your spells.
 |only if Priest
 step
+cast Teleport:Moonglade##18960
 talk Dendrite Starblaze##11802
 .tip Upstairs inside the building.
 turnin Moonglade##5921 |goto Moonglade 56.21,30.64
@@ -896,6 +897,30 @@ turnin Taming the Beast##6063 |goto Teldrassil 56.68,59.49
 accept Taming the Beast##6101 |goto Teldrassil 56.68,59.49
 |only if NightElf Hunter
 step
+use the Taming Rod##15922
+.tip Use it on a Nightsaber Stalker around this area.
+.tip They look like dark colored tigers.
+Tame a Nightsaber Stalker |q 6101/1 |goto Teldrassil 62.40,74.70
+.tip Dismiss it after you tame it.
+.tip It may attack you after you dismiss it.
+|only if NightElf Hunter
+step
+talk Dazalar##3601
+turnin Taming the Beast##6101 |goto Teldrassil 56.68,59.49
+accept Taming the Beast##6102 |goto Teldrassil 56.68,59.49
+|only if NightElf Hunter
+step
+use the Taming Rod##15923
+.tip Use it on a Strigid Screecher around this area.
+.tip They look like grey birds.
+Tame a Strigid Screecher |q 6102/1 |goto Teldrassil 43.99,51.16
+|only if NightElf Hunter
+step
+talk Dazalar##3601
+turnin Taming the Beast##6102 |goto Teldrassil 56.68,59.49
+accept Training the Beast##6103 |goto Teldrassil 56.68,59.49
+|only if NightElf Hunter
+step
 kill Agal##2162 |q 27478/1 |goto Teldrassil,46.3,52
 .tip He is inside the cave with the ambushers
 step
@@ -964,29 +989,6 @@ Select |cffffff00"Return me to life."|r
 Resurrect at the Spirit Healer |complete not isdead |goto Teldrassil 56.20,63.26 |q 935 |zombiewalk
 |only if not hardcore and not NightElf Hunter
 step
-use the Taming Rod##15922
-.tip Use it on a Nightsaber Stalker around this area.
-.tip They look like dark colored tigers.
-Tame a Nightsaber Stalker |q 6101/1 |goto Teldrassil 62.40,74.70
-.tip Dismiss it after you tame it.
-.tip It may attack you after you dismiss it.
-|only if NightElf Hunter
-step
-talk Dazalar##3601
-turnin Taming the Beast##6101 |goto Teldrassil 56.68,59.49
-accept Taming the Beast##6102 |goto Teldrassil 56.68,59.49
-|only if NightElf Hunter
-step
-use the Taming Rod##15923
-.tip Use it on a Strigid Screecher around this area.
-.tip They look like grey birds.
-Tame a Strigid Screecher |q 6102/1 |goto Teldrassil 43.99,51.16
-|only if NightElf Hunter
-step
-talk Dazalar##3601
-turnin Taming the Beast##6102 |goto Teldrassil 56.68,59.49
-accept Training the Beast##6103 |goto Teldrassil 56.68,59.49
-|only if NightElf Hunter
 step
 Enter the building |goto Teldrassil,55.76,57.24,10 |walk
 talk Laurna Morninglight##3600
