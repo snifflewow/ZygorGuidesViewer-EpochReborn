@@ -12,35 +12,9 @@ ZygorGuidesViewer:RegisterGuide(
   },
   [[
 step
-Optional Route Change
-.tip You can opt to do The Deadmines around level 20 instead of grinding.
-.tip This will mean slower leveling but it will be more fun and potentially give you gear upgrades.
-.tip If you choose to do The Deadmines, we will say when to accept and turnin dungeon quests that are worth doing in your route.
-.tip We will also say when it is a good time to do the dungeon.
-NOTE:
-.tip This feature is currently experimental and may result in a full quest log. If this happens, please submit a feedback report so we can fix it!
-.tip If you have a full quest log, we recommend abandoning any dungeon quests that can be shared by your party members later.
-Click Here if you'd like to run The Deadmines later |confirm DMflag
-Click Here if you'd prefer to grind |confirm
-step
-talk Thor##523
-fpath Sentinel Hill |goto Westfall 56.55,52.64
-|only if (Dwarf or Gnome or NightElf) and guideflag("DMflag")
-step
-talk Gryan Stoutmantle##234
-accept The Defias Brotherhood##65 |goto Westfall 56.33,47.52
-|only if (Dwarf or Gnome or NightElf) and guideflag("DMflag")
-step
+Head to the flight master |goto Redridge Mountains 30.6,59.6
 talk Ariena Stormfeather##931
 fpath Lakeshire |goto Redridge Mountains 30.59,59.41
-step
-NOTE:
-Save Cloth in Your Bank as You Level
-.tip Once you are close to reaching level 60, you will need 240 of each type of cloth.
-.tip As you level and collect Wool Cloth naturally from killing enemies while following the guide, make sure you deposit the cloth into a bank whenever you are near one.
-.tip This will give you about 40,000 quick and easy xp to help you get to level 60 faster in the longer later levels.
-Click Here to Continue |confirm
-|only if level < 60
 step
 talk Marshal Marris##382
 accept Blackrock Menace##20 |goto Redridge Mountains 33.51,48.97
@@ -51,12 +25,14 @@ accept The Lost Tools##125 |goto Redridge Mountains 32.14,48.64
 step
 talk Verner Osgood##415
 accept The Price of Shoes##118 |goto Redridge Mountains 30.98,47.28
-accept One Of Each##26846 |goto Redridge Mountains 30.98,47.28
 step
 Enter the building |goto Redridge Mountains,29.50,46.12,10 |walk
 talk Magistrate Solomon##344
 .tip Inside the building.
 accept Messenger to Stormwind##120 |goto Redridge Mountains 29.99,44.45
+step
+talk Shawn##8965
+accept Hilary's Necklace##3741 |goto Redridge Mountains 29.32,53.63
 step
 talk Dockmaster Baren##381
 accept Selling Fish##127 |goto Redridge Mountains 27.72,47.38
@@ -66,19 +42,14 @@ talk Darcy##379
 .tip She walks around this area inside the building.
 accept A Free Lunch##129 |goto Redridge Mountains 26.75,44.35
 step
-talk Wiley the Black##266
-.tip Upstairs inside the building.
-turnin The Defias Brotherhood##65 |goto Redridge Mountains 26.48,45.35 |only if haveq(65) or completedq(65)
-accept The Defias Brotherhood##132 |goto Redridge Mountains 26.48,45.35 |only if guideflag("DMflag")
-step
-Leave the building |goto Redridge Mountains,26.62,46.39,10 |walk |only if subzone("Lakeshire Inn")
+Leave the Inn |goto Redridge Mountains,26.62,46.39,10 |walk |only if subzone("Lakeshire Inn")
 Enter the building |goto Redridge Mountains,22.80,44.56,10 |walk
 talk Chef Breanna##343
 .tip Inside the building.
 accept Redridge Goulash##92 |goto Redridge Mountains 22.68,43.84
 step
-talk Shawn##8965
-accept Hilary's Necklace##3741 |goto Redridge Mountains 29.32,53.63
+talk Buffalo Will##45825
+accept One Of Each##26846 |goto Redridge Mountains 23.6,41.4
 step
 talk Lucius##6966
 turnin Redridge Rendezvous##2281 |goto Redridge Mountains 28.06,52.04
