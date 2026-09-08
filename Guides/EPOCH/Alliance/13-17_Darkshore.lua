@@ -212,11 +212,7 @@ click Beached Sea Creature##175233
 .tip Greymist Seers will heal. |only if hardcore
 .tip Greymist Coastrunners will run away quickly when at low health, so pull them away from the beached sea creature as best possible. |only if hardcore
 accept Beached Sea Creature##4723 |goto Darkshore 41.88,31.55
-step
 stickystop "kill_graymist_part1"
-label "kill_graymist_part1"
-kill 6 Greymist Seer##2203 |q 26204/2
-kill 6 Greymist Coastrunner##2202 |q 26204/1
 step
 talk Asterion##3650
 turnin Bashal'Aran##954 |goto Darkshore 44.17,36.29
@@ -364,6 +360,7 @@ click Beached Sea Creature##175226
 .tip Greymist Netters can immobilize you completely, so be wary of them. |only if hardcore
 .tip Greymist Seers may heal when their health is low. |only if hardcore
 accept Beached Sea Creature##4728 |goto Darkshore 36.06,70.86
+label "kill_graymist_part1"
 step
 stickystop "Collect_Moonstalker_Fangs"
 stickystop "Kill_Rabid_Thistle_Bears"
@@ -394,6 +391,10 @@ click Beached Sea Turtle##176190
 .tip Greymist Seers will heal. |only if hardcore
 .tip Greymist Coastrunners will run away quickly when at low health, so pull them away from the creature as best possible. |only if hardcore
 accept Beached Sea Turtle##4722 |goto Darkshore/0 37.14,62.16
+step
+label "kill_graymist_part1"
+kill 6 Greymist Seer##2203 |q 26204/2
+kill 6 Greymist Coastrunner##2202 |q 26204/1
 step
 kill 8 Blackwood Pathfinder##2167 |q 985/1 |goto Darkshore/0 39.93,56.19
 .tip These enemies may run away when at low health. |only if hardcore
