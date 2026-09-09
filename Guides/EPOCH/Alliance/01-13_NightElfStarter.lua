@@ -35,7 +35,7 @@ Destroy This Item:
 trash Hearthstone##6948 |goto Teldrassil 58.69,44.27
 |only if not hardcore
 step
-talk Conservator Ilthalaine##2079
+talk Conservator Ilthalaine##2079  |goto Teldrassil 58.60,44.70
 accept The Balance of Nature##456 |goto Teldrassil 58.69,44.27
 step
 kill 7 Young Nightsaber##2031 |q 456/1 |goto Teldrassil 61.93,42.02
