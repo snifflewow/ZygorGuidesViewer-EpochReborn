@@ -196,7 +196,7 @@ step
 talk Tarindrella##1992
 turnin The Woodland Protector##459 |goto Teldrassil 57.83,45.20
 step
-talk Aleanea Miststriker##46257
+talk Alanea Miststriker##46257
 accept Corruption in Shadowglen##27480
 step
 talk Dirania Silvershine##8583
@@ -209,7 +209,7 @@ talk Dirania Silvershine##8583
 .tip It is a TIMED quest! You will have 5 minutes to complete it.
 accept Iverron's Antidote##3522 |goto Teldrassil 60.90,41.96
 step
-talk Aleanea Miststriker##46257
+talk Alanea Miststriker##46257 |goto Teldrassil 60.1,42.2
 turnin Corruption in Shadowglen##27480
 step
 talk Gilshalan Windwalker##2082
@@ -223,7 +223,7 @@ turnin Tenaron's Summons##920 |goto Teldrassil 59.07,39.45
 accept Crown of the Earth##921 |goto Teldrassil 59.07,39.45
 step
 info Go to the moonwell to the north of your position
-use the Crystal Phial##5185
+use Crystal Phial##5185
 collect Filled Crystal Phial##5184 |q 921/1 |goto Teldrassil 59.94,33.04
 .tip Grind enemies on the way to the fountain, we want to be level 6 soon. |only if level < 6
 step
@@ -315,8 +315,8 @@ buy Walking Stick##2495 |n
 Visit the Vendor |vendor Shalomon##3609 |goto Teldrassil 56.31,59.49 |q 2438
 |only if Druid and itemcount(2495) == 0
 step
-talk Jeena Featherbow##6780
-accept Demons in Fel Rock##27483 |goto Teldrassil 61.16,47.64
+talk Jeena Featherbow##3610
+accept Demons In Fel Rock##27483 |goto Teldrassil 61.16,47.64
 step
 talk Innkeeper Keldamyr##6736
 .tip Upstairs inside the building.
@@ -417,7 +417,7 @@ stickystart "Collect_Nightsaber_Fangs"
 stickystart "Collect_Webwood_Spider_Silk"
 stickystart "Collect_Small_Spider_Legs"
 step
-use the Jade Phial##5619
+use Jade Phial##5619
 collect Filled Jade Phial##5639 |q 929/1 |goto Teldrassil 63.38,58.08
 step
 Enter the building |goto Teldrassil,66.23,58.37,20 |walk
@@ -432,7 +432,7 @@ click Tallonkai's Dresser##126158
 .tip Inside the building.
 .tip Watch for patrols and respawns while in the area. |only if hardcore
 collect Emerald Dreamcatcher##8048 |q 2438/1 |goto Teldrassil 68.01,59.63
-kill 4 Gnarlpine warrior##20089 |q 27477/2
+kill 4 Gnarlpine Warrior##2008 |q 27477/2
 step
 stickystop "Collect_Strigid_Owl_Feathers"
 label "Collect_Strigid_Owl_Feathers"
@@ -549,7 +549,7 @@ step
 kill Ferocitas the Dream Eater##7234
 collect Gnarlpine Necklace##8049 |q 2459 |goto Teldrassil 69.37,53.40
 step
-use the Gnarlpine Necklace##8049
+use Gnarlpine Necklace##8049
 collect Tallonkai's Jewel##8050 |q 2459/2
 step
 stickystop "Kill_Gnarlpine_Mystics"
@@ -650,12 +650,12 @@ talk Tallonkai Swiftroot##3567
 .tip At the top of the tower.
 turnin Twisted Hatred##932 |goto Teldrassil 55.57,56.95
 turnin Ferocitas the Dream Eater##2459 |goto Teldrassil 55.57,56.95
-turnin Demons in Fel Rock##27483 |goto Teldrassil 55.57,56.95
-accept Purifying the essence##27484
+turnin Demons In Fel Rock##27483 |goto Teldrassil 55.57,56.95
+accept Purifying the Essence##27484
 step
-use the Demonic essence##63355 |goto Teldrassil 56,62
+use Demonic Essence##63355 |goto Teldrassil 56,62
 collect Purified Essence##63354 |sticky
-turnin Purifying the essence##27484 |goto Teldrassil 55.57,56.95
+turnin Purifying the Essence##27484 |goto Teldrassil 55.57,56.95
 step
 Move on the road towards Darnassus
 talk Moon Priestess Amara##2151
@@ -700,7 +700,7 @@ turnin Attack on the Gnarlpine##27477
 accept Attack on the Gnarlpine##27478
 step
 talk Athridas Bearmantle##2078 |goto Teldrassil 56,57.3
-accept Relics of Wakening##483
+accept The Relics of Wakening##483
 step
 talk Shalomon##3609
 .tip Inside the building.
@@ -736,7 +736,7 @@ step
 talk Sentinel Arynia Cloudsbreak##3519
 accept The Enchanted Glade##937 |goto Teldrassil 38.31,34.36
 step
-use the Amethyst Phial##18152
+use Amethyst Phial##18152
 collect Filled Amethyst Phial##18151 |q 7383/1 |goto Teldrassil 38.43,34.04
 step
 talk Alanna Raveneye##3606 |goto Teldrassil 36.7,34.2
@@ -884,7 +884,7 @@ You Have Access to Stronger Ammo
 Click Here to Continue |confirm |q 2518
 |only if Hunter
 step
-use the Taming Rod##15921
+use Taming Rod##15921
 .tip Use it on a Webwood Lurker around this area.
 .tip They look like green spiders.
 Tame a Webwood Lurker |q 6063/1 |goto Teldrassil 59.81,59.06
@@ -897,7 +897,7 @@ turnin Taming the Beast##6063 |goto Teldrassil 56.68,59.49
 accept Taming the Beast##6101 |goto Teldrassil 56.68,59.49
 |only if NightElf Hunter
 step
-use the Taming Rod##15922
+use Taming Rod##15922
 .tip Use it on a Nightsaber Stalker around this area.
 .tip They look like dark colored tigers.
 Tame a Nightsaber Stalker |q 6101/1 |goto Teldrassil 62.40,74.70
@@ -910,7 +910,7 @@ turnin Taming the Beast##6101 |goto Teldrassil 56.68,59.49
 accept Taming the Beast##6102 |goto Teldrassil 56.68,59.49
 |only if NightElf Hunter
 step
-use the Taming Rod##15923
+use Taming Rod##15923
 .tip Use it on a Strigid Screecher around this area.
 .tip They look like grey birds.
 Tame a Strigid Screecher |q 6102/1 |goto Teldrassil 43.99,51.16
@@ -936,9 +936,9 @@ accept The Sleeping Druid##2541
 step
 kill Greenpaw##1993 |q 27478/3 
 .tip He spawns right next to the box
-collect Sapphire of the Sky##3407 |q 483/3 |goto 44.7,62.4
+collect Sapphire of Sky##3407 |q 483/3 |goto 44.7,62.4
 kill Gnarlpine Shaman##2009
-collect Small Voodoo Charm##8363 |q 2561 |future
+collect Shaman Voodoo Charm##8363 |q 2561 |future
 step
 talk Oben Rageclaw##7317 
 turnin The Sleeping Druid##2541
@@ -947,7 +947,7 @@ step
 kill Rageclaw##7318 |goto 45.6,59.2
 .tip he wanders around the base of the room
 .tip you can use voodoo charm even if someone else killed him
-use Voodo Charm##8149
+use Voodoo Charm##8149
 .tip on the corpse
 step
 kill Nargle##46256 |q 27478/2 
@@ -1065,7 +1065,6 @@ collect Sethir's Journal##7737 |q 2242/1 |goto Teldrassil 37.52,24.29
 .tip Be careful to not attack him or be detected, he summons a group of enemies to help him fight.
 |only if Rogue
 step
-label "Collect_Earthroot_Druid"
 collect 5 Earthroot##2449 |q 6123 |future
 .tip Use Herbalism to gather these as you quest in Teldrassil.
 .tip Collect any herbs you come across, because you need Herbalism level 15 to be able to collect Earthroot.
@@ -1163,7 +1162,6 @@ Yes, Create a Wand		|confirm	|next "Create_Wand_Priest"	|or	|q 923
 No, I Already Have a Wand	|confirm	|next "Skip_Wand_Priest"	|or	|q 923
 |only if Priest
 step
-label "Create_Wand_Priest"
 collect 70 Linen Cloth##2589 |q 923
 .tip You are about to create your wand.
 .tip If you need more Linen Cloth, try to buy some from the Auction House. |only if not selfmade
@@ -1237,7 +1235,6 @@ Open the Enchanting Profession Window
 collect Lesser Magic Wand##11287 |q 923
 |only if Priest
 step
-label "Skip_Wand_Priest"
 talk Rellian Greenspyre##3517
 turnin Tumors##923 |goto Darnassus 38.19,21.64
 step
@@ -1306,7 +1303,7 @@ step
 map Darnassus
 path	62.60,56.00	68.60,57.80	66.80,64.60	64.20,70.60	60.20,66.80
 path	61.80,60.20
-talk Jaeana ##4169
+talk Jaeana##4169
 .tip Walking around this area.
 buy Tough Jerky##117 |n
 .tip Buy up to 20, whatever you have money and bag space for if you weren't able to get many spare Spider Legs.
