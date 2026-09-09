@@ -90,22 +90,6 @@ accept Assessing the Threat##246 |goto Redridge Mountains 30.74,60.00
 stickystop "Collect_Great_Gortusk_Snouts"
 step
 talk Hilary##8962
-turnin Hilary's Necklace##3741 |goto Redridge Mountains 29.24,53.63
-step
-talk Lindsay Ashlock##791
-.tip Buy enough arrows to fill your ammo bag, plus 4-6 extra stacks.
-.tip You have a pretty long grind coming up soon.
-Visit the Vendor |vendor Lindsay Ashlock##791 |goto Redridge Mountains 28.77,47.33 |q 89
-|only if Hunter
-step
-talk Martie Jainrose##342
-turnin Visit the Herbalist##130 |goto Redridge Mountains 21.86,46.33
-accept Delivering Daffodils##131 |goto Redridge Mountains 21.86,46.33
-step
-Enter the building |goto Redridge Mountains,26.60,46.38,10 |walk
-talk Darcy##379
-.tip She walks around this area inside the building.
-turnin Delivering Daffodils##131 |goto Redridge Mountains 26.75,44.34
 step
 Leave the building |goto Redridge Mountains,26.60,46.38,10 |walk |only if subzone("Lakeshire Inn")
 Enter Alther's Mill |goto Redridge Mountains,45.84,37.31,70 |only if walking and not subzone("Alther's Mill")
@@ -166,6 +150,10 @@ Kill Murloc enemies around this area
 .tip The murlocs may run away in fear when at low health, so try to pull them away from the others to kill. |only if hardcore |notinsticky
 .tip These enemies tend to pull in groups. |only if hardcore
 collect 10 Spotted Sunfish##1467 |q 127/1 |goto Redridge Mountains 49.00,72.02
+You can find more around: |notinsticky
+[53.00,55.4]
+[49.00,72.02]
+[58.00,59.02]
 step
 label "Collect_Murloc_Fins"
 Kill Murloc enemies around this area
@@ -174,68 +162,82 @@ collect 8 Murloc Fin##1468 |goto Redridge Mountains 49.00,72.02 |q 150 |future
 .tip The murlocs may run away in fear when at low health, so try to pull them away from the others to kill. |only if hardcore |notinsticky
 .tip These enemies tend to pull in groups. |only if hardcore |notinsticky
 .tip Be careful not to accidentally sell these to a vendor.
+You can find more around: |notinsticky
+[53.00,55.4]
+[49.00,72.02]
+[58.00,59.02]
+step
+label "kill_murloc_scout"
+kill Murloc Tidecaller##545 |goto Redridge Mountains 53.00,55.4 |q 26846/3 
+kill Murloc scout##578 |goto Redridge Mountains 53.00,55.4 |q 26846/5 
 step
 kill Dire Condor##428+
 .tip They look like red birds.
 .tip They share spawn points with the Black Dragon Whelps, so kill those too, if you can't find any condors.
 collect 5 Tough Condor Meat##1080 |q 92/2 |goto Redridge Mountains 58.04,75.72
 You can find more around [47.23,76.89]
+stickystart "orc_axes"
 step
+talk Captured Servant of Azora##3069 |goto 74.5,79.5
+accept Intel on Morganth##26851
+step
+label "orc_axes"
 Kill Blackrock enemies around this area
 .tip They look like orcs.
 collect 10 Battleworn Axe##3014 |q 20/1 |goto Redridge Mountains 71.90,79.39
 You can find more around [76.41,74.07]
 |only if not hardcore
 step
+kill Murloc Nightcrawler##544 |goto Redridge Mountains 53.00,55.4 |q 26846/4 
+step
 Kill enemies around this area
 .tip We are returning to Stormwind soon
 .tip You really want to be level 20 to train new spells
 .tip Enemies near the camps tend to pull in groups. |only if hardcore
-.tip Alternatively, this can be a good time to run The Deadmines if you can find a group.
 ding 19,16870  |goto Redridge Mountains 31.47,81.01
 You can find more around [43.02,71.64]
 |only if hardcore
 step
-Kill enemies around this area
-.tip We are returning to Stormwind soon
-.tip You really want to be level 20 to train new spells
-.tip Enemies near the camps tend to pull in groups. |only if hardcore
-.tip Alternatively, this can be a good time to run The Deadmines if you can find a group.
-ding 19,15220  |goto Redridge Mountains 31.47,81.01
-You can find more around [43.02,71.64]
-|only if not hardcore
-step
-Enter the building |goto Redridge Mountains,22.81,44.55,10 |walk
-talk Chef Breanna##343
-.tip Inside the building.
-turnin Redridge Goulash##92 |goto Redridge Mountains 22.68,43.83
-step
-talk Dockmaster Baren##381
-turnin Selling Fish##127 |goto Redridge Mountains 27.72,47.38
-step
-talk Foreman Oslow##341
-turnin The Lost Tools##125 |goto Redridge Mountains 32.14,48.64
-accept The Everstill Bridge##89 |goto Redridge Mountains 32.14,48.64
+talk Deputy Feldon##1070
+turnin Assessing the Threat##246 |goto Redridge Mountains 30.73,60.00
 step
 talk Marshal Marris##382
 turnin Blackrock Menace##20 |goto Redridge Mountains 33.51,48.97
 |only if not hardcore
 step
-talk Deputy Feldon##1070
-turnin Assessing the Threat##246 |goto Redridge Mountains 30.73,60.00
+talk Foreman Oslow##341
+turnin The Lost Tools##125 |goto Redridge Mountains 32.14,48.64
+accept The Everstill Bridge##89 |goto Redridge Mountains 32.14,48.64
 step
-talk Gryan Stoutmantle##234
-turnin The Defias Brotherhood##132 |goto Westfall 56.33,47.52
-accept The Defias Brotherhood##135 |goto Westfall 56.33,47.52
-|only if guideflag("DMflag")
+turnin Hilary's Necklace##3741 |goto Redridge Mountains 29.24,53.63
 step
-Follow the path |goto Stormwind City,74.69,53.64,7 |walk
-Enter the building |goto Stormwind City,77.14,58.04,7 |walk
-talk Master Mathias Shaw##332
-.tip Upstairs inside the building.
-turnin The Defias Brotherhood##135 |goto Stormwind City 75.78,59.84
-accept The Defias Brotherhood##141 |goto Stormwind City 75.78,59.84
-|only if guideflag("DMflag")
+talk Dockmaster Baren##381
+turnin Selling Fish##127 |goto Redridge Mountains 27.72,47.38
+accept Murloc Poachers##150 |goto Redridge Mountains 27.72,47.38
+turnin Murloc Poachers##150 |goto Redridge Mountains 27.72,47.38
+step
+talk Lindsay Ashlock##791
+.tip Buy enough arrows to fill your ammo bag, plus 4-6 extra stacks.
+.tip You have a pretty long grind coming up soon.
+Visit the Vendor |vendor Lindsay Ashlock##791 |goto Redridge Mountains 28.77,47.33 |q 89
+|only if Hunter
+step
+talk Martie Jainrose##342
+turnin Visit the Herbalist##130 |goto Redridge Mountains 21.86,46.33
+accept Delivering Daffodils##131 |goto Redridge Mountains 21.86,46.33
+step
+talk Chef Breanna##343
+.tip Inside the building.
+turnin Redridge Goulash##92 |goto Redridge Mountains 22.68,43.83
+step
+talk Buffalo Will##45825
+turnin One Of Each##26846 |goto Redridge Mountains 23.6,41.4
+accept Ardo's Dirtpaw##26847
+step
+Enter the building |goto Redridge Mountains,26.60,46.38,10 |walk
+talk Darcy##379
+.tip She walks around this area inside the building.
+turnin Delivering Daffodils##131 |goto Redridge Mountains 26.75,44.34
 step
 Enter the building |goto Stormwind City,56.65,57.71,10 |walk
 talk Marda Weller##1287
@@ -338,6 +340,7 @@ talk Einris Brightspear##5515 |only if Hunter
 talk Ursula Deline##5495 |only if Warlock
 talk Wu Shen##5479 |only if Warrior
 talk Osborne the Night Man##918 |only if Rogue
+You should be lvl 20 now. Travel to Stormwind to learn catform |only if Druid
 talk Sheldras Moontree##5504 |only if Druid
 talk Brother Benjamin##5484 |only if Priest
 talk Arthur the Faithful##5491 |only if Paladin
@@ -369,17 +372,6 @@ talk Spackle Thornberry##5520
 Visit the Vendor |vendor Spackle Thornberry##5520 |goto Stormwind City 25.66,77.66 |q 4740 |future
 |only if Warlock
 step
-Enter the building |goto Stormwind City 63.62,22.82
-talk Wilder Thistlenettle##656
-.tip Inside the building.
-accept Oh Brother...##167 |goto Stormwind City 65.45,21.21
-accept Collecting Memories##168 |goto Stormwind City 65.45,21.21
-|only if guideflag("DMflag")
-step
-talk Shoni the Shilent##6579
-accept Underground Assault##2040 |goto Stormwind City 55.52,12.54
-|only if guideflag("DMflag")
-step
 talk Argos Nightwhisper##4984
 ding 20,50
 accept The Corruption Abroad##3765 |goto Stormwind City 21.41,55.79
@@ -388,158 +380,20 @@ accept The Corruption Abroad##3765 |goto Stormwind City 21.41,55.79
 .tip Train your class spells while in town.
 step
 talk General Marcus Jonathan##466
-turnin Messenger to Stormwind##120 |goto Stormwind City 63.97,75.32
-accept Messenger to Stormwind##121 |goto Stormwind City 63.97,75.32
+turnin Messenger to Stormwind##120 |goto Stormwind City 69.2,82.8
+accept Messenger to Stormwind##121 
 step
-Enter the building |goto Elwynn Forest,41.85,65.68,10 |walk
+Enter the building |goto Elwynn Forest,42.4,69.5,10 |walk
 talk Smith Argus##514
 .tip Inside the building.
 turnin The Price of Shoes##118 |goto Elwynn Forest 41.70,65.55
 accept Return to Verner##119 |goto Elwynn Forest 41.70,65.55
 step
-Prepare for The Deadmines
-.tip It will be a good time to start The Deadmines soon.
-.tip You should run it after finishing the Defias Brotherhood chain, roughly 30-45 minutes.
-.tip Start looking for a group.
-|confirm
-|only if guideflag("DMflag")
-step
-talk Gryan Stoutmantle##234
-turnin The Defias Brotherhood##141 |goto Westfall 56.33,47.52
-accept The Defias Brotherhood##142 |goto Westfall 56.33,47.52
-|only if guideflag("DMflag")
-step
-map Westfall
-path loop on
-path	45.59,65.05	43.36,58.68	41.42,49.74	37.96,44.77
-path	32.28,43.11	36.95,43.09	37.97,36.80	43.89,28.63
-path	44.45,25.85
-Check For the Defias Messenger Along This Path
-kill Defias Messenger##550
-.tip He walks along the road between Jangolode Mine and Moonbrook.
-.tip He walks into Gold Coast Quarry before traveling to either Jangolode Mine or Moonbrook.
-.tip Run on the road while looking for him.
-.tip He spawns around this location, so it may be easier to kill enemies around this area while waiting for him to either spawn or walk here.
-collect A Mysterious Message##1381 |q 142/1
-|only if guideflag("DMflag")
-step
-talk Gryan Stoutmantle##234
-turnin The Defias Brotherhood##142 |goto Westfall 56.33,47.52
-|only if guideflag("DMflag")
-step
-talk The Defias Traitor##467
-.tip This is an escort quest.
-.tip If he's not here, someone may be escorting him.
-.tip Wait until he respawns.
-accept The Defias Brotherhood##155 |goto Westfall 55.68,47.50 |noautoaccept
-|only if guideflag("DMflag")
-step
-Watch the dialogue
-.tip Follow the Defias Traitor and protect him as he walks.
-.tip He eventually walks to this location.
-Escort The Defias Traitor to Discover Where VanCleef is Hiding |q 155/1 |goto Westfall 42.54,71.69
-|only if guideflag("DMflag")
-step
-talk Gryan Stoutmantle##234
-turnin The Defias Brotherhood##155 |goto Westfall 56.33,47.52
-accept The Defias Brotherhood##166 |goto Westfall 56.33,47.52
-|only if guideflag("DMflag")
-step
-Enter the building |goto Westfall,56.51,47.41,5 |only if walking
-talk Scout Riell##820
-.tip At the top of the tower.
-accept Red Silk Bandanas##214 |goto Westfall 56.67,47.35
-|only if guideflag("DMflag") and completedq(153)
-step
-We are now doing The Deadmines.
-Enter the building |goto Westfall,42.56,71.74,5 |walk
-Follow the path up |goto Westfall,43.38,71.95,5 |only if walking
-Follow the path |goto Westfall,42.90,72.70,5 |only if walking
-Run down the ramp |goto Westfall,43.40,72.82,5 |only if walking
-Follow the path |goto Westfall,43.81,73.37,7 |only if walking
-Jump down here |goto Westfall,43.27,74.14,7 |c |q 168
-|only if guideflag("DMflag")
-stickystart "Collect_Miners_Union_Cards"
-step
-Follow the path |goto Westfall,41.60,75.95,15 |only if walking
-Continue following the path |goto Westfall,41.08,76.97,15 |only if walking
-Cross the bridge |goto Westfall,41.12,79.68,10 |only if walking
-Follow the path |goto Westfall,41.09,79.93,7 |only if walking
-kill Foreman Thistlenettle##626
-.tip He looks like a ghoul.
-.tip He walks around this area.
-collect Thistlenettle's Badge##1875 |q 167/1 |goto Westfall 41.08,80.08
-|only if guideflag("DMflag")
-step
-label "Collect_Miners_Union_Cards"
-Kill Undead enemies around this area
-collect 4 Miners' Union Card##1894 |q 168/1 |goto Westfall 40.96,80.12
-|only if guideflag("DMflag")
-step
-Enter the Deadmines Dungeon with Your Group |goto The Deadmines/0,0.00,0.00,500 |c |q 168
-|only if guideflag("DMflag")
-stickystart "Collect_10_Red_Silk_Bandanas"
-step
-Inside The Deadmines Dungeon:
-kill Sneed's Shredder##642
-.tip The second boss of the dungeon.
-collect Gnoam Sprecklesprocket##7365 |q 2040/1
-|only if guideflag("DMflag")
-step
-Inside The Deadmines Dungeon:
-kill Edwin Vancleef##639
-.tip The last boss of the dungeon.
-.tip Aboard the ship.
-collect Head of VanCleef##3637 |q 166/1
-|only if guideflag("DMflag")
-step
-Inside The Deadmines Dungeon:
-kill Edwin Vancleef##639
-.tip The last boss of the dungeon.
-.tip Aboard the ship.
-collect An Unsent Letter##2874 |q 373 |future
-|only if guideflag("DMflag")
-step
-label "Collect_10_Red_Silk_Bandanas"
-Inside The Deadmines Dungeon: |notinsticky
-Kill Defias enemies around this area
-.tip They are found throughout the dungeon.
-collect 10 Red Silk Bandanas##915 |q 214/1
-|only if guideflag("DMflag")
-step
-Leave The Deadmines Dungeon
-Click Here to Continue |confirm |q 168
-|only if guideflag("DMflag")
-step
-talk Gryan Stoutmantle##234
-turnin The Defias Brotherhood##166 |goto Westfall 56.33,47.52
-|only if guideflag("DMflag")
-step
-Enter the building |goto Westfall,56.51,47.41,5 |only if walking
-talk Scout Riell##820
-.tip At the top of the tower.
-turnin Red Silk Bandanas##214 |goto Westfall 56.67,47.35
-|only if guideflag("DMflag") and readyq(214)
-step
-use An Unsent Letter##2874
-accept The Unsent Letter##373 |goto Stormwind City 47.89,31.17
-|only if guideflag("DMflag")
-step
-Enter the building |goto Stormwind City,47.89,31.17,5 |walk
-talk Baros Alexston##1646
-turnin The Unsent Letter##373 |goto Stormwind City 49.20,30.28
-|only if guideflag("DMflag")
-step
-talk Shoni the Shilent##6579
-turnin Underground Assault##2040 |goto Stormwind City 55.52,12.54
-|only if guideflag("DMflag")
-step
-Enter the building |goto Stormwind City,63.64,22.78,5 |walk
-talk Wilder Thistlenettle##656
-.tip Inside the building
-turnin Oh Brother...##167 |goto Stormwind City 65.45,21.21
-turnin Collecting Memories##168 |goto Stormwind City 65.45,21.21
-|only if guideflag("DMflag")
+Head towards Redridge
+enter the Tower of Azora and head to the top floor |goto Elwynn Forest 65,69.8
+talk Theocritus##313
+turnin Intel on Morganth##26851
+Continue to Redridge
 step
 talk Verner Osgood##415
 turnin Return to Verner##119 |goto Redridge Mountains 30.98,47.27
@@ -554,8 +408,16 @@ You can find more around: |notinsticky
 [29.57,75.26]
 [47.12,76.91]
 stickystart "Collect_Iron_Rivets"
+stickystart "Collect_Iron_pikes"
 stickystart "Kill_Redridge_Brutes"
 stickystart "Kill_Redridge_Mystics"
+step
+Head to the cave |goto 21.1,32.9
+Enter the cave |goto 20.8,28.3
+Head left
+kill Ardo Dirtpaw##711 |q 26847/1
+.tip he has 3 adds that can be kited by jumping down to reset after they chase
+.tip you can skip this quest if you are unable to solo or find a group
 step
 Follow the path up |goto Redridge Mountains,34.92,40.80,30 |only if walking
 Kill Redridge enemies around this area
@@ -563,6 +425,7 @@ Kill Redridge enemies around this area
 .tip Redridge Alphas will not drop the quest item.
 .tip Watch for patrols and respawns while here. |only if hardcore
 .tip Enemies tend to pull in groups when near campfires. |only if hardcore
+label "Collect_Iron_pikes"
 collect 5 Iron Pike##2856 |q 89/1 |goto Redridge Mountains 38.80,32.27
 You can find more around [23.02,36.55]
 step
@@ -589,6 +452,10 @@ kill 8 Redridge Mystic##430 |q 124/2 |goto Redridge Mountains 38.80,32.27
 .tip Enemies tend to pull in groups when near campfires. |only if hardcore |notinsticky
 You can find more around [23.02,36.55]
 step
+jump down to the house |goto 23.6,41.5
+talk Buffalo Will##45825
+turnin Ardo's Dirtpaw##26847
+step
 talk Foreman Oslow##341
 turnin The Everstill Bridge##89 |goto Redridge Mountains 32.14,48.64
 step
@@ -600,16 +467,6 @@ Enter the building |goto Redridge Mountains,29.50,46.12,10 |walk
 talk Magistrate Solomon##344
 .tip Inside the building.
 turnin Messenger to Stormwind##121 |goto Redridge Mountains 29.99,44.45
-step
-talk Dockmaster Baren##381
-accept Murloc Poachers##150 |goto Redridge Mountains 27.72,47.38
-step
-talk Dockmaster Baren##381
-turnin Murloc Poachers##150 |goto Redridge Mountains 27.72,47.38
-step
-Destroy or Sell These Items:
-.tip They are no longer needed.
-trash Murloc Fin##1468
 step
 Enter the building |goto Stormwind City,56.65,57.71,10 |walk
 talk Marda Weller##1287
@@ -712,22 +569,5 @@ talk Spackle Thornberry##5520
 .tip After buying them, make sure to use them in your bags to learn the spells.
 Visit the Vendor |vendor Spackle Thornberry##5520 |goto Stormwind City 25.66,77.66 |q 4740 |future
 |only if Warlock
-step
-Optional Route Change
-.tip You can opt to do Blackfathom Deeps around level 24 instead of grinding.
-.tip This will mean slower leveling but it will be more fun and potentially give you gear upgrades.
-.tip If you choose to do Blackfathom Deeps, we will say when to accept and turnin dungeon quests that are worth doing in your route.
-.tip We will also say when it is a good time to do the dungeon.
-NOTE:
-.tip This feature is currently experimental and may result in a full quest log. If this happens, please submit a feedback report so we can fix it!
-.tip If you have a full quest log, we recommend abandoning any dungeon quests that can be shared by your party members later.
-Click Here if you'd like to run Blackfathom Deeps later |confirm BFDflag
-Click Here if you'd prefer to grind |confirm
-step
-Run up the stairs |goto Ironforge,51.24,9.84,5 |only if walking
-talk Gerrig Bonegrip##2786
-.tip Inside the building.
-accept Knowledge in the Deeps##971 |goto Ironforge 50.82,5.60
-|only if guideflag("BFDflag")
 ]]
 )

@@ -366,9 +366,6 @@ turnin Speak with Shoni##2041
 step
 talk Sheldras Moontree##5504 |goto Stormwind City 35.9,67.3
 .tip learn skills as you should be 18 now
-talk Argos Nightwhisper##4984
-accept The Corruption Abroad##3765
-|only if NightElf Druid
 step
 talk Innkeeper Allison##6740 |goto 60.4,75.2 |only if NightElf Druid
 home Stormwind |only if NightElf Druid
