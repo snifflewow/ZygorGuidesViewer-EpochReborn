@@ -70,7 +70,7 @@ accept Gathering Idols##297 |goto Loch Modan 64.90,66.65
 stickystop "loch_weed"
 stickystop "loch_threshes"
 step
-talk Alderen Cordon##1214 |goto 64.9,66.1
+talk Aldren Cordon##1214 |goto 64.9,66.1
 accept Lost Artifacts##26841
 step
 talk Prospector Ironband##1344
@@ -85,7 +85,7 @@ collect 8 Carved Stone Idol##2636 |q 297/1 |goto Loch Modan 70.31,62.79
 collect 5 Lost Artifact##62669 |q 26841/1 |goto Loch Modan 70.31,62.79
 .tip these look like big stone slabs/tablets
 step
-talk Alderen Cordon##1214 |goto 64.9,66.1
+talk Aldren Cordon##1214 |goto 64.9,66.1
 turnin Lost Artifacts##26841
 step
 talk Magmar Fellhew##1345
@@ -192,7 +192,7 @@ click Bingles's Toolbucket##104564
 .tip Enemies may run away when at low health here. |only if hardcore
 collect Bingles' Wrench##7343 |q 2038/1 |goto Loch Modan 48.73,30.09
 step
-click Bingles' Blastencapper##104575
+click Bingles's Blastencapper##104575
 .tip Enemies around this area tend to be bunched up and pull in two. |only if hardcore
 .tip Stonesplinter Seers are ranged attackers that hit hard. |only if hardcore
 .tip Enemies may run away when at low health here. |only if hardcore
@@ -204,7 +204,7 @@ click Bingles's Toolbucket##104574
 .tip Enemies may run away when at low health here. |only if hardcore
 collect Bingles' Hammer##7346 |q 2038/3 |goto Loch Modan 51.78,24.09
 step
-click Bingles' Toolbucket##104569
+click Bingles's Toolbucket##104569
 .tip Enemies around this area tend to be bunched up and pull in two. |only if hardcore
 .tip Stonesplinter Seers are ranged attackers that hit hard. |only if hardcore
 .tip Enemies may run away when at low health here. |only if hardcore
@@ -240,7 +240,7 @@ Kill enemies around this area
 .tip You should already be level 18, or very close.
 ding 18 |goto Loch Modan 74.06,51.92
 step
-use the Grimoire of Consume Shadows (Rank 1)##16357
+use Grimoire of Consume Shadows (Rank 1)##16357
 .tip You should have purchased this in a previous guide.
 Teach Your Voidwalker Consume Shadows (Rank 1) |learnpetspell Consume Shadows##17767 |goto Loch Modan 25.66,77.66
 .tip You need to have your voidwalker active to be able to learn these new spells.
@@ -310,7 +310,7 @@ talk Buliwyf Stonehand##11865 |goto Ironforge 61.3,89.3
 talk Bixi Wobblebonk##13084 |goto Ironforge 61.9,89.5
 |only if NightElf
 step
-talk Gyrth Thurden##1573 |goto 55.7,48
+talk Gryth Thurden##1573 |goto 55.7,48
 fpath Ironforge
 |only if NightElf
 step
@@ -360,11 +360,11 @@ accept Speak with Shoni##2041
 |only if NightElf
 step
 info Take the Deeprun Tram to Stormwind. |goto Ironforge 76.6,51.1
-talk Shoni The Silent##6579 |goto Stormwind 62.7,34.1
+talk Shoni the Shilent##6579 |goto Stormwind City 62.7,34.1
 turnin Speak with Shoni##2041
 |only if NightElf
 step
-talk Sheldras Moontree##5504 |goto Stormwind 35.9,67.3
+talk Sheldras Moontree##5504 |goto Stormwind City 35.9,67.3
 .tip learn skills as you should be 18 now
 talk Argos Nightwhisper##4984
 accept The Corruption Abroad##3765
@@ -388,7 +388,7 @@ collect Half Pendant of Aquatic Endurance##15882 |goto Westfall 17.87,33.11 |q 2
 |only if NightElf Druid
 step
 cast Teleport:Moonglade##18960
-use the Half Pendant of Aquatic Agility##15883
+use Half Pendant of Aquatic Agility##15883
 collect Pendant of the Sea Lion##15885 |q 272/1 |goto Moonglade 35.92,41.42
 |only if NightElf Druid
 step
@@ -405,7 +405,7 @@ talk Mathrengyl Bearwalker##4217
 .tip Upstairs inside the building, on the top floor.
 turnin Aquatic Form##5061 |goto Darnassus 35.37,8.39
 use Hearthstone##6948
-.tip Hearth to Stormwind. |goto Stormwind 60.4,75.2 |noway
+.tip Hearth to Stormwind. |goto Stormwind City 60.4,75.2 |noway
 |only if NightElf Druid
 ]]
 )

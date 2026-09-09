@@ -24,7 +24,7 @@ talk Wizbang Cranktoggle##3666
 .tip Upstairs inside the building.
 accept Buzzbox 827##983 |goto Darkshore 36.98,44.14
 step
-talk Innkeeper Shaussy##6737
+talk Innkeeper Shaussiy##6737
 home Auberdine |goto Auberdine 37,44
 step
 talk Gwennyth Bly'Leggonde##10219
@@ -50,7 +50,7 @@ talk Bill Wheeland##45038
 accept My Sister Isabetta##27205 |goto Darkshore 37.5,41.6
 accept The Greymist Menace##26204 |goto Darkshore 37.5,41.6
 step
-talk Quartermaster Nyana##10218
+talk Quartermaster Nyana##45036
 turnin Welcome to Auberdine##26203 |goto Darkshore 37.37,45.12
 step
 Enter the building |goto Darkshore,37.77,41.36,15 |walk
@@ -261,7 +261,7 @@ accept As Water Cascades##4812 |goto Darkshore 37.71,43.39
 turnin Balancing the Forest##26200 |goto Darkshore 37.71,43.39
 accept Balancing the Forest##26201 |goto Darkshore 37.71,43.39
 step
-use the Empty Water Tube##14338
+use Empty Water Tube##14338
 collect Moonwell Water Tube##14339 |q 4812/1 |goto Darkshore 37.79,44.06
 step
 talk Bill Wheeland##45038
@@ -290,7 +290,7 @@ step
 stickystop "kill_moonkin_part2"
 label "kill_moonkin_part2"
 kill 10 Raging Moonkin##10160+ |q 26201/1
-kill 3 Moonkin Oracle##10161+ |q 26201/2
+kill 3 Moonkin Oracle##10157+ |q 26201/2
 .tip These can be found inside the caves.
 .tip Very few spawn locations for these.
 stickystart "Collect_Moonstalker_Fangs"
@@ -307,7 +307,7 @@ stickystop "Collect_Moonstalker_Fangs"
 stickystart "Collect_Highborne_Relics"
 stickystart "Collect_Anyas_Pendant"
 step
-click Lay of Ameth'Aran##17188
+click The Lay of Ameth'Aran##17188
 .tip Watch for patrols and respawns while in the area. |only if hardcore
 Read the Lay of Ameth'Aran |q 953/1 |goto Darkshore 43.31,58.70
 step
@@ -315,7 +315,7 @@ click Ancient Flame##16393
 .tip Watch for patrols and respawns while in the area. |only if hardcore
 Destroy the Seal at the Ancient Flame |q 957/1 |goto Darkshore 42.37,61.79
 step
-click Fall of Ameth'Aran##17189
+click The Fall of Ameth'Aran##17189
 .tip Watch for patrols and respawns while in the area. |only if hardcore
 Read the Fall of Ameth'Aran |q 953/2 |goto Darkshore 42.67,63.10
 step
@@ -412,7 +412,7 @@ Kill enemies around this area
 ding 16 |goto Darkshore/0 39.93,56.19
 You can find more around [39.81,53.87]
 step
-use the Grimoire of Sacrifice (Rank 1)##16351
+use Grimoire of Sacrifice (Rank 1)##16351
 Teach Your Voidwalker Sacrifice (Rank 1) |learnpetspell Sacrifice##7812
 .tip You need to have your voidwalker active to be able to learn these new spells.
 |only if Warlock
@@ -475,7 +475,7 @@ click Bauble Container
 collect Shrine Bauble##15877 |goto Moonglade 54.33,55.65 |q 29
 |only if NightElf Druid
 step
-use the Shrine Bauble##15877
+use Shrine Bauble##15877
 Complete the Trial of the Lake |q 29/1 |goto Moonglade 35.92,41.38
 |only if NightElf Druid
 step
@@ -513,7 +513,7 @@ click Scaber Stalk##11714+
 .tip If possible, only stay on the upper level of the cave as the spawn can be quite inconsistent. |only if hardcore
 collect 5 Scaber Stalk##5271 |q 947/1 |goto Darkshore 55.22,33.92
 step
-use the Empty Cliffspring Falls Sampler##15844
+use Empty Cliffspring Falls Sampler##15844
 .tip At the entrance of the cave.
 .tip Be careful, 3 enemies will spawn when you collect the sample. Be prepared to run away. |only if hardcore
 collect Filled Cliffspring Falls Sampler##15845 |q 6122/1 |goto Darkshore 54.93,33.32
@@ -524,7 +524,7 @@ click Buzzbox 323
 turnin Buzzbox 323##1002 |goto Darkshore 51.28,24.58
 accept Buzzbox 525##1003 |goto Darkshore 51.28,24.58
 step
-use the Empty Sampling Tube##12350
+use Empty Sampling Tube##12350
 .tip In the water, at the bottom of the waterfall.
 collect Cliffspring River Sample##12349 |q 4762/1 |goto Darkshore 50.84,25.50
 stickystart "Collect_Fine_Crab_Chunks"
@@ -619,7 +619,7 @@ turnin Gathering the Cure##6123 |goto Darkshore 37.69,40.66
 accept Curing the Sick##6124 |goto Darkshore 37.69,40.66
 |only if NightElf Druid
 step
-use the Curative Animal Salve##15826
+use Curative Animal Salve##15826
 .tip Use it on Sickly Deer around this area.
 .tip They look like green diseased deer in areas with trees.
 .tip They are spread out all throughout Darkshore.
@@ -661,12 +661,12 @@ info Head to the end of the docks for the boats.
 |goto Darkshore 32.4,43.8
 info Take the boat to Menethil Harbor.
 step
-talk Shelly Brondir##1571
+talk Shellei Brondir##1571
 .tip Fly to Loch Modan.
 |goto Loch Modan 33.9,51.3
 |only if not NightElf
 step
-talk Shelly Brondir##1571 |goto Wetlands 9.5,59.7
+talk Shellei Brondir##1571 |goto Wetlands 9.5,59.7
 fpath Menethil Harbor
 |only if NightElf
 step
