@@ -167,9 +167,8 @@ You can find more around: |notinsticky
 [49.00,72.02]
 [58.00,59.02]
 step
-label "kill_murloc_scout"
 kill Murloc Tidecaller##545 |goto Redridge Mountains 53.00,55.4 |q 26846/3 
-kill Murloc scout##578 |goto Redridge Mountains 53.00,55.4 |q 26846/5 
+kill Murloc Scout##578 |goto Redridge Mountains 53.00,55.4 |q 26846/5 
 step
 kill Dire Condor##428+
 .tip They look like red birds.
@@ -178,7 +177,7 @@ collect 5 Tough Condor Meat##1080 |q 92/2 |goto Redridge Mountains 58.04,75.72
 You can find more around [47.23,76.89]
 stickystart "orc_axes"
 step
-talk Captured Servant of Azora##3069 |goto 74.5,79.5
+talk Captured Servant of Azora##3096  |goto Redridge Mountains 74.50,79.50
 accept Intel on Morganth##26851
 step
 label "orc_axes"
@@ -265,7 +264,7 @@ talk Duthorian Rall##6171
 accept The Tome of Valor##1793 |goto Stormwind City 39.81,29.80 |instant
 |only if Paladin
 step
-use the Tome of Valor##6776
+use Tome of Valor##6776
 accept The Tome of Valor##1649
 |only if Paladin
 step
@@ -494,7 +493,7 @@ talk Duthorian Rall##6171
 accept The Tome of Valor##1793 |goto Stormwind City 39.81,29.80 |instant
 |only if Paladin
 step
-use the Tome of Valor##6776
+use Tome of Valor##6776
 accept The Tome of Valor##1649 |goto Stormwind City 39.81,29.80
 |only if Paladin
 step
