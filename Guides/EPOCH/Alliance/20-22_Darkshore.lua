@@ -13,26 +13,12 @@ ZygorGuidesViewer:RegisterGuide(
   [[
 step
 Travel to Darkshore
-.tip From Stormwind: Take the Deeprun Tram to Ironforge.
-.tip The Tram entrance is in the Trade District of Stormwind.
-Run to the Tram |goto Stormwind City,66.65,16.25,10 |walk
-Enter the Deeprun Tram |goto Stormwind City,69.44,10.50,5 |walk
+use Hearthstone##6948
+|only if not NightElf Druid
 step
-Board the Deeprun Tram |confirm |goto Ironforge 210.24,47.27
-.tip The Tram takes about 1 minute to arrive in Ironforge.
-Click Here to Continue |confirm
-step
-Get a flight path to Menethil |goto Ironforge,74.46,60.92,15 |walk
-.tip Head to the Flight Master in Ironforge.
-step
-Fly to Menethil Harbor |goto Wetlands,8.73,59.15,5
-.tip The flight takes about 2 minutes. Once you arrive, head to the docks.
-step
-Board the boat to Auberdine |goto Wetlands,8.8,71,5
-.tip Look for the boat docked at the Menethil Harbor docks.
-.tip It departs regularly to Auberdine in Darkshore.
-Click Here to Continue |confirm |goto Darkshore 36.34,45.58
-.tip You are now in Auberdine in Darkshore. The boat will dock here automatically.
+cast Teleport:Moonglade##18960
+Fly to Darnassus |goto moonglade 44.2,45.2 |c
+Fly to Darkshore |goto Darkshore 36.4,45.6 |c
 step
 click WANTED: Murkdeep!##175320
 accept WANTED: Murkdeep!##4740 |goto Darkshore 37.23,44.23
