@@ -35,7 +35,7 @@ Destroy This Item:
 trash Hearthstone##6948 |goto Teldrassil 58.69,44.27
 |only if not hardcore
 step
-talk Conservator Ilthalaine##2079  |goto Teldrassil 58.60,44.70
+talk Conservator Ilthalaine##2079
 accept The Balance of Nature##456 |goto Teldrassil 58.69,44.27
 step
 kill 7 Young Nightsaber##2031 |q 456/1 |goto Teldrassil 61.93,42.02
@@ -666,7 +666,7 @@ step
 get 8 Lily Whip##63358 |q 27485/1 |goto 40,65
 .tip They spawn around the edge of the lake
 step
-use the Tourmaline Phial##5621
+use Tourmaline Phial##5621
 collect Filled Tourmaline Phial##5645 |q 933/1 |goto Teldrassil 42.42,67.07
 step
 click Strange Fruited Plant##6751
