@@ -398,31 +398,7 @@ talk Vesprystus##3838
 fpath Rut'theran Village |goto Teldrassil 58.40,94.02
 |only if not NightElf
 step
-Fly to Darnassus
-step
-Run up the ramp |goto Darnassus,62.60,68.79,10 |only if walking
-talk Landria##4173
-.tip Inside the building.
-buy Heavy Recurve Bow##3027 |n
-.tip If you can afford it.
-.tip If you have better, skip this step.
-Visit the Vendor |vendor Landria##4173 |goto Darnassus 63.26,66.27 |q 951
-|only if Hunter and itemcount(3027) == 0
-step
-talk Landria##4173
-.tip Inside the building.
-buy Medium Quiver##11362 |n
-.tip If you can afford it.
-.tip Ignore this if you aren't using bows.
-Visit the Vendor |vendor Landria##4173 |goto Darnassus 63.26,66.27 |q 951
-|only if Hunter and itemcount(11362) == 0
-step
-talk Chief Archaeologist Greywhisker##2912
-.tip Outside the building.
-turnin The Absent Minded Prospector##741 |goto Darnassus 31.25,84.50
-turnin The Odd Relic##27229
-accept The Absent Minded Prospector##942 |goto Darnassus 31.25,84.50
-step
-fly back to darkshore
+If your class has good spells at 22 head to Darnassus now to learn the skills
+If not go to the next step
 ]]
 )

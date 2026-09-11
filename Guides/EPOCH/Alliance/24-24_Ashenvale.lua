@@ -68,7 +68,7 @@ kill Befouled Water Elemental##3917+
 .tip These enemies are immune to frost damage.
 collect 5 Intact Elemental Bracer##12220 |goto Ashenvale 48.38,69.68 |q 1016
 step
-use the Divining Scroll##5456
+use Divining Scroll##5456
 collect Divined Scroll##5455 |q 1016/1
 step
 talk Sentinel Velene Starstrike##3885
@@ -97,58 +97,6 @@ talk Raene Wolfrunner##3691
 .tip Inside the building.
 turnin Culling the Threat##1054 |goto Ashenvale 36.62,49.58
 step
-Run Blackfathom Deeps
-Jump into the water |goto Ashenvale/0,14.12,13.88,10 |walk
-Swim underwater into the cave |goto Ashenvale/0,13.28,13.23,10 |walk
-Follow the path |goto Ashenvale/0,13.90,10.92,10 |walk
-Follow the path |goto Ashenvale/0,13.74,9.38,10 |walk
-Follow the path |goto Ashenvale/0,14.37,9.20,10 |walk
-Follow the path |goto Ashenvale/0,16.50,11.61,10 |walk
-Enter the Blackfathom Deeps Dungeon with Your Group |goto Blackfathom Deeps/0,0.00,0.00,500 |c |q 971
-|only if guideflag("BFDflag")
-stickystart "Collect_10_Twilight_Pendants"
-stickystart "Collect_8_Corrupted_Brain_Stems"
-step
-Inside the Blackfathom Deeps Dungeon:
-click Pitted Iron Chest
-.tip Follow the path inside the dungeon to enter The Drowned Sacellum.
-.tip Swim to the south side of the room and then jump across the platforms to reach the southwest path.
-.tip Continue following the path to enter The Pool of Ask'ar.
-.tip It is underwater to the north of Gamoo-ra.
-collect Lorgalis Manuscript##5359 |q 971/1
-|only if guideflag("BFDflag")
-step
-Inside the Blackfathom Deeps Dungeon:
-talk Argent Guard Thaelrid##4787
-.tip Head southwest again in The Pool of Ask'ar and swim into the underwater cave.
-.tip He is laying on the ground inside the underwater cave.
-turnin In Search of Thaelrid##1198
-accept Blackfathom Villainy##1200
-|only if guideflag("BFDflag")
-step
-Inside the Blackfathom Deeps Dungeon:
-kill Twilight Lord Kelris##4832
-.tip The fourth boss of the dungeon.
-.tip Leave the underwater cave and reenter the main room in The Pool of Ask'ar.
-.tip Swim south and follow the path to the left to reach the Moonshrine Ruins.
-.tip Follow the path southeast through the Moonshrine Ruins into the Moonshrine Sanctum.
-collect Head of Kelris##5881 |q 1200/1
-|only if guideflag("BFDflag")
-step
-label "Collect_10_Twilight_Pendants"
-Inside the Blackfathom Deeps Dungeon: |notinsticky
-Kill Twilight enemies around this area
-.tip They are found throughout the instance.
-collect 10 Twilight Pendant##5879 |q 1199/1
-|only if guideflag("BFDflag")
-step
-label "Collect_8_Corrupted_Brain_Stems"
-Inside the Blackfathom Deeps Dungeon: |notinsticky
-Kill Blackfathom and Fallenroot enemies around this area
-.tip They are found throughout the instance.
-collect 8 Corrupted Brain Stem##5952 |q 1275/1
-|only if guideflag("BFDflag")
-step
 Leave the Blackfathom Deeps Dungeon
 Click Here to Continue |confirm |q 971
 |only if guideflag("BFDflag")
@@ -158,20 +106,12 @@ talk Terenthis##3693
 turnin Escape Through Force##994 |goto Darkshore 39.37,43.48
 |only if not hardcore
 step
-talk Gershala Nightwhisper##8997
-turnin Researching the Corruption##1275 |goto Darkshore 38.33,43.04
-|only if guideflag("BFDflag")
-step
-Run up the ramp |goto Darnassus,56.46,20.41,5 |only if walking
-talk Argent Guard Manados##4784
-.tip Inside the building.
-turnin Twilight Falls##1199 |goto Darnassus 55.23,24.00
-|only if guideflag("BFDflag")
-step
-talk Dawnwatcher Selgorm##4783
-.tip Inside the building.
-turnin Blackfathom Villainy##1200 |goto Darnassus 56.17,24.38
-|only if guideflag("BFDflag")
+Fly to Darnassus
+talk Chief Archaeologist Greywhisker##2912
+.tip Outside the building.
+turnin The Absent Minded Prospector##741 |goto Darnassus 31.25,84.50
+turnin The Odd Relic##27229
+accept The Absent Minded Prospector##942 |goto Darnassus 31.25,84.50
 step
 talk Jocaste##4146 |only if Hunter
 talk Syurna##4163 |only if Rogue
