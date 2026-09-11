@@ -15,7 +15,6 @@ step
 talk Orendil Broadleaf##3847
 accept Bathran's Hair##1010 |goto Ashenvale 26.44,38.59
 accept Forsaken Looters##27038 |goto Ashenvale 26.44,38.59
-accept Attack on the Foulweald##27412 |goto Ashenvale 26.44,38.59
 step
 Kill Dark Strand enemies around this area
 .tip This item has a low drop rate.
@@ -33,12 +32,20 @@ You can find more around: |notinsticky
 [31.75,22.70]
 [32.29,21.79]
 step
+kill 5 Forsaken Seeker##3732 |q 27038/1  |goto Ashenvale 30.40,25.00
+kill 5 Forsaken Herbalist##3733 |q 27038/2  |goto Ashenvale 30.40,25.00
+kill 5 Forsaken Thug##3734|q 27038/3  |goto Ashenvale 30.40,25.00
+step
+talk Delgren the Purifier##3663
+turnin Forsaken Looters##27038 |goto Ashenvale 26.44,38.59
+turnin The Tower of Althalaxx##970 |goto Ashenvale 26.20,38.70
+step
 talk Orendil Broadleaf##3847
 turnin Bathran's Hair##1010 |goto Ashenvale 26.44,38.59
 accept Orendil's Cure##1020 |goto Ashenvale 26.44,38.59
 step
 talk Delgren the Purifier##3663
-turnin The Tower of Althalaxx##970 |goto Ashenvale 26.20,38.70
+.tip once the rp is done
 accept The Tower of Althalaxx##973 |goto Ashenvale 26.20,38.70
 step
 Follow the road |goto Ashenvale,25.53,38.43,30 |only if walking and subzone("Maestra's Post")
@@ -54,6 +61,9 @@ accept The Zoram Strand##1008 |goto Ashenvale 34.67,48.84
 step
 talk Faldreas Goeth'Shael##3996
 accept Journey to Stonetalon Peak##1056 |goto Ashenvale 35.77,49.10
+step
+talk Sentinel Thenysil##4079  |goto Ashenvale 34.90,49.80
+accept On Guard in Stonetalon##1085
 step
 talk Innkeeper Kimlya##6738
 .tip Inside the building.

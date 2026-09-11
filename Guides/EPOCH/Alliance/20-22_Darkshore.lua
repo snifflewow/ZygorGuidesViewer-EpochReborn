@@ -20,20 +20,35 @@ cast Teleport:Moonglade##18960
 Fly to Darnassus |goto moonglade 44.2,45.2 |c
 Fly to Darkshore |goto Darkshore 36.4,45.6 |c
 step
+click Wanted: Mistfin and Grizzletooth |goto 37.2,44.3
+accept Wanted: Grizzletooth##26208
 click WANTED: Murkdeep!##175320
 accept WANTED: Murkdeep!##4740 |goto Darkshore 37.23,44.23
 |only if not hardcore
 step
+talk Barithras Moonshade##3583  |goto Darkshore 37.30,43.60
+accept Onu##948
+step
 talk Archaeologist Hollee##2913
-turnin Trouble In Darkshore?##730 |goto Darkshore 37.44,41.84 |only if haveq(730)
 accept The Absent Minded Prospector##729 |goto Darkshore 37.44,41.84
+accept Commission for Archaeologist Everit##28475
+.tip only if you have first aid
+step
+talk Bill Wheeland##45038  |goto Darkshore 37.50,41.60
+accept The Greymist Menace##26205
 step
 Enter the building |goto Darkshore,37.77,41.34,15 |walk
+talk Quartermaster Nyana##45036  |goto Darkshore 37.80,41.00
+.tip buy the reputation chest if its better than your current equip and you can afford it
+step
+talk Alanndarian Nightsong##3702  |goto Darkshore 37.70,40.70
+accept The Twilight's Hammer##26202	
+step
 talk Thundris Windweaver##3649
 .tip Inside the building.
 accept The Blackwood Corrupted##4763 |goto Darkshore 37.40,40.13
 step
-use the Empty Cleansing Bowl##12346
+use Empty Cleansing Bowl##12346
 collect Filled Cleansing Bowl##12347 |goto Darkshore 37.78,44.02 |q 4763
 step
 talk Gershala Nightwhisper##8997
@@ -51,6 +66,7 @@ talk Sentinel Elissa Starbreeze##3657
 .tip Upstairs inside the building.
 accept The Tower of Althalaxx##965 |goto Darkshore 39.05,43.55
 step
+head south on the road, jump on a caravan if one is heading south
 talk Onu##3616
 turnin Onu##948 |goto Darkshore 43.55,76.29
 accept The Master's Glaive##944 |goto Darkshore 43.55,76.29
@@ -62,13 +78,14 @@ Enter the Master's Glaive |q 944/1 |goto Darkshore 38.57,86.30
 stickystop "Collect_Fine_Moonstalker_Pelts"
 stickystop "Collect_Grizzled_Scalps"
 step
-use the Phial of Scrying##5251
+use Phial of Scrying##5251
 click Scrying Bowl##10076
 .tip It appears on the ground next to you.
 .tip Watch for patrols and respawns while in the area. |only if hardcore
 turnin The Master's Glaive##944 |goto Darkshore 38.53,86.17
 accept The Twilight Camp##949 |goto Darkshore 38.53,86.17
 .tip This quest will only be available if you've completed the quest chain starting with "Cave Mushrooms". |only if hardcore
+stickystart "hammers_kills"
 step
 Destroy This Items:
 .tip It is no longer needed.
@@ -93,8 +110,13 @@ Watch the dialogue
 .tip She eventually walks to this location.
 Escort Therylune Away from the Master's Glaive |q 945/1 |goto Darkshore 40.51,87.09
 step
-use the Book: The Powers Below##5352
+label "hammers_kills"
+kill 8 Twilight Thug##2339 |q 26202/1  |goto Darkshore 55.50,36.00
+kill 8 Twilight Disciple##2338 |q 26202/2 |goto Darkshore 39.50,88.00
+step
+use Book: The Powers Below##5352
 accept The Powers Below##968
+.tip skip if it didn't drop
 |only if itemcount(5352) > 0
 stickystart "Collect_Fine_Moonstalker_Pelts"
 step
@@ -106,6 +128,11 @@ You can find more around: |notinsticky
 [41.22,84.67]
 stickystop "Collect_Fine_Moonstalker_Pelts"
 step
+talk Archaeologist Everit##46076  |goto Darkshore 35.70,83.60
+turnin Commission for Archaeologist Everit##28475
+accept Personal Possessions##27223
+accept Rampaging Golems##27224
+step
 talk Prospector Remtravel##2917
 .tip This is an escort quest.
 .tip If he's not here, someone may be escorting him.
@@ -116,24 +143,28 @@ accept The Absent Minded Prospector##731 |goto Darkshore 35.73,83.70 |noautoacce
 .tip It requires escorting the npc and protecting him from waves of attackers with minimal rest time. |only if hardcore
 .tip Skipping this quest will result in extra grinding down the road. |only if hardcore
 step
-Watch the dialogue
-.tip Follow Prospector Remtravel and protect him as he walks.
-.tip He is very weak and can die easily, so get the enemies off of him quickly.
-.tip Despite this, do let him get aggro first so he will help you fight.
-.tip Troggs will appear and ambush him 3 times along the way.
-.tip Try to quickly eat and drink after every enemy to be healthy for the next.
-.tip Don't be afraid to run if you get overwhelemed. |only if hardcore
-.tip Enemies do respawn quickly here, so be careful. |only if hardcore
+pickup items for Personal Possessions along the way
+.tip TODO: fix item ids and coords
 Escort Prospector Remtravel |q 731/1 |goto Darkshore 35.73,83.70
+step
+If you still have golems left after escort
+kill 6 Cracked Golem##2156 |q 27224/1
+step
+talk Archaeologist Everit##46076  |goto Darkshore 35.70,83.60
+turnin Personal Possessions##27223
+turnin Rampaging Golems##27224
+stickystart "greymist_oracle"
 step
 click Beached Sea Creature##175230
 accept Beached Sea Creature##4733 |goto Darkshore 31.27,87.39
 step
-click Beached Sea Turtle##175227
+click Beached Sea Creature##175227
 accept Beached Sea Turtle##4732 |goto Darkshore 31.24,85.63
 step
-click Beached Sea Turtle##175227
+click Beached Sea Creature##175227
 accept Beached Sea Turtle##4731 |goto Darkshore 31.69,83.72
+label "greymist_oracle"
+kill 6 Greymist Oracle##2207 |q 26205/2  |goto Darkshore 33.20,81.40
 step
 click Beached Sea Creature##175227
 accept Beached Sea Creature##4730 |goto Darkshore 32.66,80.81
@@ -175,6 +206,7 @@ Kill Greymist enemies around this area
 .tip You may need help with this.
 kill Murkdeep##10323 |q 4740/1 |goto Darkshore 36.51,76.59
 |only if not hardcore
+kill 6 Greymist Hunter##2206 |q 26205/1  |goto Darkshore 33.20,81.40
 step
 talk Gwennyth Bly'Leggonde##10219
 turnin Beached Sea Creature##4733 |goto Darkshore 36.62,45.59
@@ -196,6 +228,12 @@ talk Archaeologist Hollee##2913
 turnin The Absent Minded Prospector##731 |goto Darkshore 37.44,41.84
 accept The Absent Minded Prospector##741 |goto Darkshore 37.44,41.84
 .tip This won't be available if you haven't completed the previous quest. |only if hardcore
+step
+talk Bill Wheeland##45038  |goto Darkshore 37.50,41.60
+turnin The Greymist Menace##26205
+step
+talk Alanndarian Nightsong##3702  |goto Darkshore 37.70,40.70
+turnin The Twilight's Hammer##26202
 step
 click Blackwood Grain Stores##175331
 .tip You will be attacked each time you click a keg.
@@ -230,7 +268,7 @@ click Blackwood Fruit Stores##175330
 .tip Be sure to destroy them as soon as they appear. |only if hardcore
 collect Blackwood Fruit Sample##12341 |goto Darkshore 52.83,33.41 |q 4763
 step
-use the Filled Cleansing Bowl##12347
+use Filled Cleansing Bowl##12347
 kill Xabraxxis##10373
 .tip He appears nearby.
 .tip Make sure to step quite a bit back as every live Blackwood enemy will run to this location. |only if hardcore
@@ -300,51 +338,14 @@ turnin The Blackwood Corrupted##4763 |goto Darkshore 37.40,40.13
 step
 talk Tharnariun Treetender##3701
 turnin Tharnariun's Hope##2139 |goto Darkshore 38.84,43.41
-step
-talk Vesprystus##3838
-fpath Rut'theran Village |goto Teldrassil 58.40,94.02
-step
-Run up the ramp |goto Darnassus,62.60,68.79,10 |only if walking
-talk Landria##4173
-.tip Inside the building.
-buy Heavy Recurve Bow##3027 |n
-.tip If you can afford it.
-.tip If you have better, skip this step.
-Visit the Vendor |vendor Landria##4173 |goto Darnassus 63.26,66.27 |q 951
-|only if Hunter and itemcount(3027) == 0
-step
-talk Landria##4173
-.tip Inside the building.
-buy Medium Quiver##11362 |n
-.tip If you can afford it.
-.tip Ignore this if you aren't using bows.
-Visit the Vendor |vendor Landria##4173 |goto Darnassus 63.26,66.27 |q 951
-|only if Hunter and itemcount(11362) == 0
-step
-talk Chief Archaeologist Greywhisker##2912
-.tip Outside the building.
-turnin The Absent Minded Prospector##741 |goto Darnassus 31.25,84.50
-accept The Absent Minded Prospector##942 |goto Darnassus 31.25,84.50
-step
-Run up the ramp |goto Darnassus,56.46,20.41,5 |only if walking
-talk Argent Guard Manados##4784
-.tip Inside the building.
-accept Twilight Falls##1199 |goto Darnassus 55.23,24.00
-|only if guideflag("BFDflag")
-step
-talk Dawnwatcher Shaedlass##4786
-.tip Inside the building.
-accept In Search of Thaelrid##1198 |goto Darnassus 55.37,25.00
-|only if guideflag("BFDflag")
-step
-talk Gershala Nightwhisper##8997
-accept Researching the Corruption##1275 |goto Darkshore 38.33,43.04
-|only if guideflag("BFDflag")
-step
+take a caravan if one passes going south
 talk Onu##3616
 turnin Mathystra Relics##951 |goto Darkshore 43.55,76.29
+accept The Odd Relic##27229
 step
 Enter the cave |goto Darkshore,44.58,85.11,15 |walk
+kill Grizzletooth##45041 |q 26208/1  |goto Darkshore 45.00,85.50
+step
 talk Volcor##3692
 .tip Inside the cave.
 .tip He starts an escort quest.
@@ -371,10 +372,9 @@ step
 click Kerlonian's Chest##176634
 collect Horn of Awakening##13536 |q 5321/1 |goto Darkshore 44.38,76.31
 step
-label "Escort_Kerlonian_Evershade"
 Enter Ashenvale and follow the road |goto Darkshore,43.49,94.32,50 |only if walking
 Enter the building |goto Ashenvale,26.87,36.65,15 |walk
-use the Horn of Awakening##13536
+use Horn of Awakening##13536
 .tip Kerlonian Evershade will follow you.
 .tip He will sometimes stop walking and fall asleep.
 .tip Use it near him when he falls asleep.
@@ -393,5 +393,36 @@ step
 talk Delgren the Purifier##3663
 turnin The Tower of Althalaxx##967 |goto Ashenvale 26.20,38.70
 accept The Tower of Althalaxx##970 |goto Ashenvale 26.20,38.70
+step
+talk Vesprystus##3838
+fpath Rut'theran Village |goto Teldrassil 58.40,94.02
+|only if not NightElf
+step
+Fly to Darnassus
+step
+Run up the ramp |goto Darnassus,62.60,68.79,10 |only if walking
+talk Landria##4173
+.tip Inside the building.
+buy Heavy Recurve Bow##3027 |n
+.tip If you can afford it.
+.tip If you have better, skip this step.
+Visit the Vendor |vendor Landria##4173 |goto Darnassus 63.26,66.27 |q 951
+|only if Hunter and itemcount(3027) == 0
+step
+talk Landria##4173
+.tip Inside the building.
+buy Medium Quiver##11362 |n
+.tip If you can afford it.
+.tip Ignore this if you aren't using bows.
+Visit the Vendor |vendor Landria##4173 |goto Darnassus 63.26,66.27 |q 951
+|only if Hunter and itemcount(11362) == 0
+step
+talk Chief Archaeologist Greywhisker##2912
+.tip Outside the building.
+turnin The Absent Minded Prospector##741 |goto Darnassus 31.25,84.50
+turnin The Odd Relic##27229
+accept The Absent Minded Prospector##942 |goto Darnassus 31.25,84.50
+step
+fly back to darkshore
 ]]
 )
