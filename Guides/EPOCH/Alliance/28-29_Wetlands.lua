@@ -313,5 +313,8 @@ talk Glorin Steelbrow##1217
 turnin The Lost Ingots##324 |goto Wetlands 10.59,60.59
 accept Blessed Arm##322 |goto Wetlands 10.59,60.59
 .tip You may not be able to accept this quest if you skipped an earlier quest in the chain. |only if hardcore
+step
+Get on the boat to Darkshore
+Fly to Stonetalon Mountains
 ]]
 )

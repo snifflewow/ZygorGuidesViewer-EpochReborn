@@ -12,14 +12,6 @@ ZygorGuidesViewer:RegisterGuide(
   },
   [[
 step
-NOTE:
-This questing area is one of the slower ones.
-.tip There are not many better quests right now that are safe to do.
-.tip This is one of the few times dungeons are faster than questing.
-.tip It is acceptable to do dungeons until level 30.50 and skip this guide, there are no important chains missed.
-.tip If you skip ahead, your next guide is Wetlands (30-31)
-Click Here to Continue |confirm
-step
 talk Keeper Albagorm##3994
 accept Reclaiming the Charred Vale##1057 |goto Stonetalon Mountains 37.10,8.10
 stickystart "Kill_Bloodfury_Ambushers"
