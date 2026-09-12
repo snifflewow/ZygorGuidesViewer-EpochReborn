@@ -74,6 +74,9 @@ Follow the road to this path and run up the path to enter Nijel's Point |goto De
 talk Baritanas Skyriver##6706
 fpath Nijel's Point |goto Desolace 64.66,10.54
 step
+talk Bapper Tookwinkle##46186  |goto Ashenvale 3.80,51.70
+turnin Tinkering in the Vale##27408
+step
 talk Keeper Albagorm##3994
 turnin Reclaiming the Charred Vale##1057 |goto Stonetalon Mountains 37.10,8.10
 accept Reclaiming the Charred Vale##1059 |goto Stonetalon Mountains 37.10,8.10
