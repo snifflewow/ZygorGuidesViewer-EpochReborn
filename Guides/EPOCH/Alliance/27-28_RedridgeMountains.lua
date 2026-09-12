@@ -273,7 +273,6 @@ trainer Arthur the Faithful##5491 |goto Stormwind City/0 38.65,32.80 |only if Pa
 .tip In the basement. |only if Warlock
 .tip Train your spells.
 step
-step
 Leave the building |goto Stormwind City,43.05,34.48,10 |walk |only if subzone("Cathedral of Light")
 talk Tinkmaster Overspark##7944
 turnin Tinkmaster Overspark##2923 |goto Ironforge 69.54,50.32
