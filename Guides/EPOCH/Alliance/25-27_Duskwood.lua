@@ -391,11 +391,6 @@ click Sealed Crate |goto Stormwind City 42.5,72.1
 turnin The Legend of Stalvan##72
 accept The Legend of Stalvan##74
 step
-Enter the building |goto Stormwind City 42.3,81.7
-talk Zardeth of the Black Claw##1435
-.tip Downstairs inside the building.
-accept A Noble Brew##335 |goto Stormwind City 26.45,78.66
-step
 Enter the building |goto Duskwood,75.55,45.37,10 |walk
 talk Madame Eva##265
 .tip She walks around this area inside the building.
@@ -570,5 +565,7 @@ Visit the Vendor |vendor Gavin Gnarltree##225 |goto Duskwood 73.60,50.04 |q 159
 step
 talk Sarae Dewlight##45731  |goto Blasted Lands 0.70,4.0
 turnin Life In Death##26712 |goto Duskwood 77.7,52.2
+step
+fly to Redridge Mountains
 ]]
 )

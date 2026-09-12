@@ -16,6 +16,9 @@ talk Guard Howe##903
 accept Blackrock Bounty##128 |goto Redridge Mountains 31.54,57.85
 |only if not hardcore
 step
+talk Marshal Marris##382  |goto Redridge Mountains 33.50,49.00
+accept Eye for an Eye##26850
+step
 talk Verner Osgood##415
 accept Howling in the Hills##126 |goto Redridge Mountains 30.97,47.27
 .tip This requires you to complete the "A Baying of Gnolls" quest found in the "Redridge Mountains (18-20)" guide.
@@ -25,6 +28,9 @@ Enter the building |goto Redridge Mountains,29.50,46.12,10 |walk
 talk Bailiff Conacher##900
 .tip Inside the building.
 accept Solomon's Law##91 |goto Redridge Mountains 29.72,44.26
+step
+talk Amy Davenport##777  |goto Redridge Mountains 29.10,47.30
+accept Clyde's Special Thread##26848
 step
 Leave the building |goto Redridge Mountains,29.50,46.12,10 |walk |only if subzone("Lakeshire Town Hall")
 click Wanted: Lieutenant Fangore
@@ -57,6 +63,10 @@ kill Yowler##518
 collect Yowler's Paw##3614 |q 126/1 |goto Redridge Mountains/0 27.84,21.77
 Also check around [34.17,25.09]
 |only if not hardcore
+step
+Follow the path down |goto Redridge Mountains/0,89,70.9,15 |walk
+talk Clyde Ranthal##2697  |goto Redridge Mountains 89.00,70.90
+accept Gnoll Patrol##26849
 stickystart "Collect_Shadowhide_Pendants"
 step
 kill Lieutenant Fangore##703
@@ -69,18 +79,13 @@ kill Lieutenant Fangore##703
 collect Fangore's Paw##3632 |q 180/1 |goto Redridge Mountains/0 78.93,38.46
 Also check around [84.46,50.51]
 |only if not hardcore
-step
-Follow the path down |goto Redridge Mountains/0,89,70.9,15 |walk
-talk Clyde Ranthal##2697
-accept Clyde's Special Thread##26848 |goto Redridge Mountains/0 89,70.9
-step
-accept Gnoll Patrol##26849 |goto Redridge Mountains/0 89,70.9
-.tip This quest requires you to complete Clyde's Special Thread first.
+stickystart "gnoll_warriors"
 step
 kill 7 Shadowhide Brute##432 |q 26849/1 |goto Redridge Mountains/0 77.98,39.66
 .tip Enemies around camps tend to pull in groups so be wary. |only if hardcore
 .tip Watch for patrols and respawns here. |only if hardcore
 step
+label "gnoll_warriors"
 kill 7 Shadowhide Warrior##568 |q 26849/2 |goto Redridge Mountains/0 77.98,39.66
 .tip Enemies around camps tend to pull in groups so be wary. |only if hardcore
 .tip Watch for patrols and respawns here. |only if hardcore
@@ -107,12 +112,13 @@ You can find more around: |notinsticky
 |only if hardcore
 step
 talk Clyde Ranthal##2697
-turnin Clyde's Special Thread##26848 |goto Redridge Mountains/0 89,70.9
 turnin Gnoll Patrol##26849 |goto Redridge Mountains/0 89,70.9
 step
 Follow the road |goto Redridge Mountains/0,47.63,27.69,40 |only if walking
 Follow the path |goto Redridge Mountains/0,39.14,14.15,40 |only if walking
 kill 15 Blackrock Champion##435 |q 128/1 |goto Redridge Mountains/0 33.21,6.88
+kill 6 Blackrock Tracker##615 |q 26850/2  |goto Redridge Mountains 39.20,14.80
+kill 6 Blackrock Summoner##4463 |q 26850/1 |goto Redridge Mountains 74.00,79.30
 .tip Inside and outside the cave.
 .tip They are mostly inside the cave, and the next guide step is inside the cave.
 .tip Try to kill them mostly inside the cave.
@@ -146,6 +152,7 @@ Escort Corporal Keeshan Back to Redridge |q 219/1 |goto Redridge Mountains/0 33.
 step
 talk Marshal Marris##382
 turnin Missing In Action##219 |goto Redridge Mountains/0 33.51,48.97
+turnin Eye for an Eye##26850
 |only if not hardcore
 step
 talk Verner Osgood##415
@@ -160,31 +167,25 @@ step
 talk Magistrate Solomon##344
 .tip Inside the building.
 turnin Wanted: Lieutenant Fangore##180 |goto Redridge Mountains/0 29.99,44.46
-turnin One Of Each##26846 |goto Redridge Mountains/0 29.99,44.46
 |only if not hardcore
+step
+talk Amy Davenport##777  |goto Redridge Mountains 29.10,47.30
+turnin Clyde's Special Thread##26848
 step
 Leave the building |goto Redridge Mountains/0,29.50,46.12,10 |walk |only if subzone("Lakeshire Town Hall")
 talk Guard Howe##903
 turnin Blackrock Bounty##128 |goto Redridge Mountains/0 31.54,57.86
 |only if not hardcore
 step
-talk Guard Berton##859
-accept What Comes Around...##386 |goto Redridge Mountains 26.26,46.57
-|only if guideflag("Stockflag")
-step
-Prepare for The Stockades
-.tip It will be a good time to start The Stockades soon.
-.tip You should run it after turning in quests and training in Stormwind.
-.tip Start looking for a group.
-|confirm
-|only if guideflag("Stockflag")
-step
+Fly to Stormwind
 Enter the building |goto Stormwind City,55.29,68.13,10 |walk
 talk Olivia Burnside##2455
 .tip Inside the building.
 .tip Put these items in the bank.
 bank A Torn Journal Page##916 |goto Stormwind City 57.55,72.43 |q 74 |future |only if haveq(74) or completedq(74)
 bank Bottle of Zombie Juice##1451 |goto Stormwind City 57.55,72.43 |q 159 |future |only if haveq(159) or completedq(159)
+bank Skeleton Finger##2378
+bank Vial of Spider Venom##1130
 step
 Enter the building |goto Stormwind City,50.95,57.84,7 |walk
 talk Frederick Stover##1298
@@ -195,19 +196,8 @@ buy Sturdy Recurve##11306 |n
 Visit the Vendor |vendor Frederick Stover##1298 |goto Stormwind City 49.98,57.64 |q 1078 |future
 |only if Hunter and (itemcount(11306) == 0)
 step
-talk Collin Mauren##4078
-accept Retrieval for Mauren##1078 |goto Stormwind City 43.09,80.39
-step
-Enter the building |goto Stormwind City,29.19,74.12,10 |walk
-talk Zardeth of the Black Claw##1435
-.tip Downstairs inside the building.
-turnin A Noble Brew##335 |goto Stormwind City 26.45,78.65
-|only if readyq(335)
-step
-talk Zardeth of the Black Claw##1435
-.tip Downstairs inside the building.
-accept A Noble Brew##336 |goto Stormwind City 26.45,78.65
-|only if completedq(335)
+talk Collin Mauren##4078  |goto Stormwind City 53.00,86.60
+accept Retrieval for Mauren##1078
 step
 Enter the building |goto Stormwind City,43.05,34.48,10 |walk
 talk Brother Sarno##7917
@@ -230,31 +220,15 @@ talk Bishop Farthing##1212
 turnin Seeking Wisdom##269 |goto Stormwind City 39.13,27.90
 accept The Doomed Fleet##270 |goto Stormwind City 39.13,27.90
 step
-Enter the building |goto Stormwind City,47.89,31.17,5 |walk
-talk Baros Alexston##1646
-turnin The Unsent Letter##373 |goto Stormwind City 49.20,30.28 |only if haveq(373)
-accept Bazil Thredd##389 |goto Stormwind City 49.20,30.28
-.tip This quest will only be available if you did The Deadmines
-|only if guideflag("Stockflag")
-step
 use An Old History Book##2794
 accept An Old History Book##337	|goto Stormwind City 69.09,28.70
 |only if itemcount(337) > 0 |goto Stormwind City 69.09,28.70
 step
-Enter the building |goto Stormwind City,69.09,28.70,15 |walk
-Follow the path |goto Stormwind City,72.71,25.85,10 |walk
-talk Lord Baurles K. Wishock##1439
+Enter the keep |goto Stormwind City 72.6,47.2
+talk Bishop DeLavey##4960  |goto Stormwind City 80.20,44.10
 .tip Inside the building.
-turnin A Noble Brew##336 |goto Stormwind City 75.23,31.67
-|only if haveq(336)
-step
-Leave the building |goto Stormwind City,43.05,34.48,10 |walk |only if subzone("Cathedral of Light")
-Enter the building |goto Stormwind City,69.07,28.77,15 |walk
-Follow the path |goto Stormwind City,77.88,21.14,10 |walk
-talk Bishop DeLavey##4960
-.tip Inside the building.
-turnin The Missing Diplomat##1274 |goto Stormwind City 78.30,25.44
-accept The Missing Diplomat##1241 |goto Stormwind City 78.30,25.44
+turnin The Missing Diplomat##1274
+accept The Missing Diplomat##1241
 step
 Leave the Petitioner's Chamber |goto Stormwind City,72.80,26.02,10 |walk |only if subzone("Petitioner's Chamber")
 Follow the path |goto Stormwind City,72.72,22.92,10 |walk
@@ -265,12 +239,17 @@ turnin An Old History Book##337 |goto Stormwind City 74.17,7.49
 accept Southshore##538 |goto Stormwind City 74.17,7.49
 |only if haveq(337)
 step
-Follow the path |goto Stormwind City,77.01,19.25,15 |walk |only if subzone("Stormwind Keep")
-Leave the building |goto Stormwind City,69.07,28.77,10 |walk |only if subzone("Stormwind Keep")
-Follow the path |goto Stormwind City,60.27,68.37,30 |only if walking
-talk Jorgen##4959
-turnin The Missing Diplomat##1241 |goto Stormwind City 73.17,78.42
-accept The Missing Diplomat##1242 |goto Stormwind City 73.17,78.42
+talk Jorgen##4959  |goto Stormwind City 76.30,85.10
+turnin The Missing Diplomat##1241 
+accept The Missing Diplomat##1242
+step
+talk Elling Trias##482  |goto Stormwind City 66.00,74.10
+.tip Upstairs inside the building.
+turnin The Missing Diplomat##1242
+accept The Missing Diplomat##1243
+step
+bank Sealed Note to Watcher Backus##5960
+fly to Wetlands
 step
 talk Jennea Cannon##5497 |only if Mage
 talk Einris Brightspear##5515 |only if Hunter
@@ -294,88 +273,6 @@ trainer Arthur the Faithful##5491 |goto Stormwind City/0 38.65,32.80 |only if Pa
 .tip In the basement. |only if Warlock
 .tip Train your spells.
 step
-talk Nikova Raskol##1721
-.tip She walks around this area.
-accept The Color of Blood##388 |goto Stormwind City 73.63,46.59
-|only if guideflag("Stockflag")
-step
-Enter the building |goto Stormwind City,42.20,58.77,5 |walk
-talk Warden Thelwater##1719
-.tip Inside the building.
-turnin Bazil Thredd##389 |goto Stormwind City 41.10,58.09
-accept The Stockade Riots##391 |goto Stormwind City 41.10,58.09
-accept Quell The Uprising##387 |goto Stormwind City 41.10,58.09
-|only if guideflag("Stockflag")
-step
-Enter The Stockade Dungeon with Your Group |goto The Stockade/0,0.00,0.00,500 |c |q 378
-|only if guideflag("Stockflag")
-stickystart "Kill_10_Defias_Prisoners"
-stickystart "Kill_8_Defias_Convicts"
-stickystart "Kill_8_Defias_Insurgents"
-stickystart "Collect_10_Red_Wool_Bandanas"
-step
-Inside The Stockade Dungeon:
-kill Targorr the Dread##1696
-.tip He is the first boss of the dungeon.
-.tip He should be in one of the side rooms at the start of the dungeon or the single room straight to the north.
-collect Head of Targorr##3630 |q 386/1
-|only if guideflag("Stockflag")
-step
-Inside The Stockade Dungeon:
-kill Bazil Thredd##1716
-.tip He is the fourth boss of the dungeon.
-.tip Follow the east path all the way to the end.
-collect Head of Bazil Thredd##2926 |q 391/1
-|only if guideflag("Stockflag")
-step
-Inside The Stockade Dungeon:
-kill Dextren Ward##1663
-.tip He is the fifth boss of the dungeon.
-.tip Follow the west path all the way to the end.
-collect Hand of Dextren Ward##3628 |q 377/1
-|only if guideflag("Stockflag")
-step
-label "Kill_10_Defias_Prisoners"
-Inside The Stockade Dungeon: |notinsticky
-kill 10 Defias Prisoner##1706 |q 387/1
-|only if guideflag("Stockflag")
-step
-label "Kill_8_Defias_Convicts"
-Inside The Stockade Dungeon: |notinsticky
-kill 8 Defias Convict##1711 |q 387/2
-|only if guideflag("Stockflag")
-step
-label "Kill_8_Defias_Insurgents"
-Inside The Stockade Dungeon: |notinsticky
-kill 8 Defias Insurgent##1715 |q 387/3
-|only if guideflag("Stockflag")
-step
-label "Collect_10_Red_Wool_Bandanas"
-Inside The Stockade Dungeon: |notinsticky
-Kill Defias enemies around this area
-collect 10 Red Wool Bandana##2909 |q 388/1
-|only if guideflag("Stockflag")
-step
-talk Warden Thelwater##1719
-.tip Inside the building.
-turnin The Stockade Riots##391 |goto Stormwind City 41.10,58.09
-turnin Quell The Uprising##387 |goto Stormwind City 41.10,58.09
-accept The Curious Visitor##392 |goto Stormwind City 41.10,58.09
-|only if guideflag("Stockflag")
-step
-NOTE:
-.tip The Seal of Wrynn questline is too difficult to solo at this level.
-.tip However, most groups stick around to do it together after running Stockades.
-.tip Ask if your group wants to do the chain together and follow them if so.
-.tip Otherwise abandon "The Curious Visitor" for now and we'll do it around level 31.
-Click Here To Continue |confirm
-|only if guideflag("Stockflag")
-step
-Leave the building |goto Stormwind City,42.25,58.86,5 |walk
-talk Nikova Raskol##1721
-.tip She walks around this area.
-turnin The Color of Blood##388 |goto Stormwind City 73.39,50.69
-|only if guideflag("Stockflag")
 step
 Leave the building |goto Stormwind City,43.05,34.48,10 |walk |only if subzone("Cathedral of Light")
 talk Tinkmaster Overspark##7944

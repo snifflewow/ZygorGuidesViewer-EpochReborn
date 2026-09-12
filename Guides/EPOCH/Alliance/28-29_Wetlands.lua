@@ -12,14 +12,6 @@ ZygorGuidesViewer:RegisterGuide(
   },
   [[
 step
-NOTE:
-Save Cloth in Your Bank as You Level
-.tip Once you are close to reaching level 60, you will need 240 of each type of cloth.
-.tip As you level and collect Silk Cloth naturally from killing enemies while following the guide, make sure you deposit the cloth into a bank whenever you are near one.
-.tip This will give you about 40,000 quick and easy xp to help you get to level 60 faster in the longer later levels.
-Click Here to Continue |confirm
-|only if level < 60
-step
 talk First Mate Fitzsimmons##1239
 accept The Cursed Crew##289 |goto Wetlands 10.89,59.67
 .tip This requires you to complete "The Third Fleet" quest found the "Wetlands (24-25)" guide.
