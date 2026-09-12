@@ -30,15 +30,26 @@ talk Archaeologist Flagongut##2911
 accept The Absent Minded Prospector##943 |goto Wetlands 10.84,60.43
 .tip You won't be able to accept this quest if you skipped any of the previous quests in the chain. |only if hardcore
 step
+talk Karl Boran##1242  |goto Wetlands 8.30,58.60
+accept Reclaiming Goods##281
+step
+talk James Halloran##2094  |goto Wetlands 8.50,55.70
+accept Apprentice's Duties##471
+step
 Leave the building |goto Wetlands,10.79,59.76,10 |walk |only if subzone("Deepwater Tavern")
 talk Harlo Barnaby##2097
 accept Fall of Dun Modr##472 |goto Wetlands 10.85,55.90
 step
+talk Valstag Ironjaw##2086  |goto Wetlands 10.10,56.90
+accept Report to Captain Stoutfist##473
+accept Don't Kill The Messenger##27022
+step
 Enter the building |goto Wetlands,10.30,56.30,15 |walk
 Run up the stairs |goto Wetlands,9.80,57.77,7 |walk
-talk Captain Stoutfist##2104
+talk Captain Stoutfist##2104  |goto Wetlands 9.90,57.50
 .tip Upstairs inside the building, in the large room.
-accept War Banners##464 |goto Wetlands 9.86,57.49
+turnin Report to Captain Stoutfist##473
+accept War Banners##464 
 step
 Leave the building |goto Wetlands,10.29,56.31,15 |walk |only if subzone("Menethil Keep")
 talk Tarrel Rockweaver##2096
@@ -158,11 +169,6 @@ click Loose Soil##331
 .tip It can also spawn up on the cliff next to the higher level Sarltooth raptor.
 .tip If it does, try to get someone to help you, if you can't solo him.
 collect Neru Fragment##2661 |q 299/4 |goto Wetlands 36.51,42.11
-Also check: |notinsticky
-Around [34.73,45.31]
-Around [32.82,48.77]
-Around [35.30,49.72]
-Up the path at [31.90,50.17]
 step
 label "Collect_Golm_Fragment"
 click Ancient Relic##333
@@ -171,11 +177,6 @@ click Ancient Relic##333
 .tip It can also spawn up on the cliff next to the higher level Sarltooth raptor. |notinsticky
 .tip If it does, try to get someone to help you, if you can't solo him. |notinsticky
 collect Golm Fragment##2660 |q 299/3 |goto Wetlands 36.51,42.11
-Also check: |notinsticky
-Around [34.73,45.31]
-Around [32.82,48.77]
-Around [35.30,49.72]
-Up the path at [31.90,50.17]
 step
 label "Collect_Modr_Fragment"
 click Ancient Relic##333
@@ -184,11 +185,6 @@ click Ancient Relic##333
 .tip It can also spawn up on the cliff next to the higher level Sarltooth raptor. |notinsticky
 .tip If it does, try to get someone to help you, if you can't solo him. |notinsticky
 collect Modr Fragment##2659 |q 299/2 |goto Wetlands 36.51,42.11
-Also check: |notinsticky
-Around [34.73,45.31]
-Around [32.82,48.77]
-Around [35.30,49.72]
-Up the path at [31.90,50.17]
 step
 label "Collect_Ados_Fragment"
 click Ancient Relic##333
@@ -197,11 +193,6 @@ click Ancient Relic##333
 .tip It can also spawn up on the cliff next to the higher level Sarltooth raptor. |notinsticky
 .tip If it does, try to get someone to help you, if you can't solo him. |notinsticky
 collect Ados Fragment##2658 |q 299/1 |goto Wetlands 36.51,42.11
-Also check: |notinsticky
-Around [34.73,45.31]
-Around [32.82,48.77]
-Around [35.30,49.72]
-Up the path at [31.90,50.17]
 step
 label "Kill_Mottled_Scytheclaws"
 kill 10 Mottled Scytheclaw##1022 |q 295/1 |goto Wetlands 34.73,45.31
@@ -249,6 +240,9 @@ collect Stone of Relu##5233 |q 943/1 |goto Wetlands 34.73,45.31
 [32.82,48.77]
 [35.30,49.72]
 step
+talk Wounded Burndural Messenger##45969  |goto Wetlands 41.50,38.70
+use Soothing Bandage##62885
+step
 Leave Whelgar's Excavation Site |goto Wetlands,34.02,40.85,20 |only if walking and subzone("Whelgar's Excavation Site")
 Kill Dragonmaw enemies around this area
 collect 8 Dragonmaw War Banner##3337 |q 464/1 |goto Wetlands 42.95,41.12
@@ -271,9 +265,6 @@ You can find more around: |notinsticky
 [53.96,41.25]
 [54.98,46.16]
 step
-click Musquash Root
-collect Musquash Root##2784 |q 335/2 |goto Wetlands 64.76,75.29
-step
 talk Glorin Steelbrow##1217
 .tip Inside the building.
 accept Lightforge Iron##321 |goto Wetlands 10.59,60.59
@@ -286,7 +277,6 @@ step
 Leave the building |goto Wetlands,10.79,59.77,10 |walk |only if subzone("Deepwater Tavern")
 talk First Mate Fitzsimmons##1239
 turnin The Cursed Crew##289 |goto Wetlands 10.89,59.67
-accept Lifting the Curse##290 |goto Wetlands 10.89,59.67
 step
 talk Karl Boran##1242
 .tip He walks around this area.
@@ -301,7 +291,10 @@ Run up the stairs |goto Wetlands,9.80,57.77,7 |walk
 talk Captain Stoutfist##2104
 .tip Upstairs inside the building, in the large room.
 turnin War Banners##464 |goto Wetlands 9.86,57.49
-accept Nek'rosh's Gambit##465 |goto Wetlands 9.86,57.49 |only if not hardcore
+turnin Don't Kill The Messenger##27022
+step
+talk Tarrel Rockweaver##2096  |goto Wetlands 11.50,52.20
+turnin In Search of The Excavation Team##306
 step
 Leave the building |goto Wetlands,10.30,56.30,15 |walk |only if subzone("Menethil Keep")
 click Waterlogged Chest
