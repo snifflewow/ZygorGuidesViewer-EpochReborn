@@ -12,12 +12,16 @@ ZygorGuidesViewer:RegisterGuide(
   },
   [[
 step
+talk Bapper Tookwinkle##46186  |goto Ashenvale 3.80,51.70
+accept Tinkering in the Vale##27408
+step
 talk Keeper Albagorm##3994
 accept Reclaiming the Charred Vale##1057 |goto Stonetalon Mountains 37.10,8.10
 stickystart "Kill_Bloodfury_Ambushers"
 stickystart "Kill_Bloodfury_Slayers"
 stickystart "Kill_Bloodfury_Roguefeathers"
 stickystart "Collect_Crystalized_Scales"
+stickystart "scorched_scales"
 step
 Leave Stonetalon Peak |goto Stonetalon Mountains,41.61,15.98,30 |only if walking and subzone("Stonetalon Peak")
 Follow the path into the Charred Vale |goto Stonetalon Mountains,42.57,42.44,30 |only if walking and not subzone("The Charred Vale")
@@ -58,6 +62,12 @@ Kill Basilisk enemies around this area
 .tip Run up and down this path that leads into the Charred Vale, and grind on the other enemies that appear as well. |notinsticky
 .tip You can also find a few in the Charred Vale valley, but they're more rare. |notinsticky
 collect 8 Crystalized Scales##5675 |q 1078/1 |goto Stonetalon Mountains 37.02,50.10
+step
+label "scorched_scales"
+collect 8 Scorched Scale##63263 |q 27408/1
+step
+kill Enraged Stone Spirit##4034+ 
+collect Raging Core##63264 |q 27408/2
 step
 Follow the path up |goto Stonetalon Mountains,30.22,75.85,20 |only if walking and not zone("Desolace")
 Follow the road to this path and run up the path to enter Nijel's Point |goto Desolace,67.49,15.76,20 |only if walking and not subzone("Nijel's Point")
