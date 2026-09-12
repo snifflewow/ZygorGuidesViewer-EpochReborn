@@ -100,6 +100,8 @@ talk Ginny Longberry##5151
 Visit the Vendor |vendor Ginny Longberry##5151 |goto Ironforge 31.32,27.79 |q 484 |future
 |only if Mage
 step
+take the boat to Wetlands
+step
 talk James Halloran##2094
 .tip He walks around this area.
 accept Young Crocolisk Skins##484 |goto Wetlands 8.51,55.71
@@ -125,6 +127,9 @@ talk Archaeologist Flagongut##2911
 .tip Upstairs inside the building.
 turnin The Absent Minded Prospector##942 |goto Wetlands 10.84,60.43
 step
+talk Junder Brokk##3182  |goto Wetlands 10.80,60.20
+accept Oars O'er the Bay##26818
+step
 Leave the building |goto Wetlands,10.79,59.77,10 |walk |only if subzone("Deepwater Tavern")
 talk First Mate Fitzsimmons##1239
 turnin The Third Fleet##288 |goto Wetlands 10.89,59.67
@@ -149,6 +154,9 @@ buy Bronze Tube##4371 |n
 .tip This item is needed for a quest later on in Duskwood.
 Visit the Vendor |vendor Neal Allen##1448 |goto Wetlands 10.75,56.75 |q 174 |future
 |only if itemcount(4371) == 0
+step
+talk Andrew Porter##45814  |goto Wetlands 13.30,54.30
+turnin Oars O'er the Bay##26818
 stickystart "Kill_Young_Crocs"
 stickystart "Slay_Bluegill_Murlocs"
 step
@@ -158,9 +166,6 @@ kill Gobbler##1259
 .tip He looks like a grey murloc that walks around this area.
 .tip Watch for patrols and respawns while in the area. |only if hardcore
 collect Gobbler's Head##3618 |q 279/2 |goto Wetlands 17.99,40.38
-Also check around: |notinsticky
-[14.45,41.53]
-[14.86,35.88]
 step
 label "Slay_Bluegill_Murlocs"
 Kill Bluegill enemies around this area
@@ -168,6 +173,9 @@ Kill Bluegill enemies around this area
 .tip Watch for patrols and respawns while in the area. |only if hardcore |notinsticky
 .tip Enemies near huts will likely pull in groups, so avoid if possible. |only if hardcore |notinsticky
 Slay #12# Bluegill Murlocs |q 279/1 |goto Wetlands 13.64,39.55
+Also check around: |notinsticky
+[14.45,41.53]
+[14.86,35.88]
 stickystop "Kill_Young_Crocs"
 step
 Kill enemies around this area
@@ -194,9 +202,11 @@ buy Bronze Tube##4371 |n
 Visit the Vendor |vendor Fradd Swiftgear##2682 |goto Wetlands 26.40,25.76 |q 174 |future
 |only if itemcount(4371) == 0
 step
+talk Wounded Burndural Messenger##45969  |goto Wetlands 41.50,38.70
+accept Message to Menethil##27021 |goto Wetlands 49.91,39.37
+step
 talk Einar Stonegrip##2093
 accept Daily Delivery##469 |goto Wetlands 49.91,39.37
-accept Message to Menethil##27021 |goto Wetlands 49.91,39.37
 step
 talk Rethiel the Greenwarden##1244
 turnin The Greenwarden##463 |goto Wetlands 56.37,40.40
@@ -251,7 +261,6 @@ talk Rethiel the Greenwarden##1244
 turnin Tramping Paws##276 |goto Wetlands 56.37,40.40
 accept Fire Taboo##277 |goto Wetlands 56.37,40.40
 step
-NOTE:
 Check Your Hearthstone
 .tip The next step will instruct you to jump off of a bridge into the water.
 .tip Afterwards, the guide assumes you will hearth back to Menethil Harbor.
@@ -268,13 +277,9 @@ click Waterlogged Letter##2656
 .tip Underwater.
 collect Waterlogged Envelope##4433 |goto Arathi Highlands 44.29,92.88 |q 637 |future |notravel
 step
-cast Teleport: Moonglade##18960
-trainer Loganaar##12042 |goto Moonglade/0 52.50,40.54 |q 637 |future
-.tip Go to Moonglade and train your spells, then hearth once it is off cooldown.
-|only if Druid and C_Container.GetItemCooldown(6948) <= 100
-step
-use the Waterlogged Envelope##4433
+use Waterlogged Envelope##4433
 accept Sully Balloo's Letter##637 |goto Wetlands 11.80,57.99
+use Hearthstone##6948
 step
 talk Sida##2111
 turnin Digging Through the Ooze##470 |goto Wetlands 11.80,57.99
@@ -289,17 +294,20 @@ buy Bronze Tube##4371 |n
 Visit the Vendor |vendor Neal Allen##1448 |goto Wetlands 10.75,56.75 |q 174 |future
 |only if itemcount(4371) == 0
 step
+talk Karl Boran##1242
+.tip He walks around this area.
+turnin Claws from the Deep##279 |goto Wetlands 8.31,58.53
+step
 Leave the building |goto Wetlands,10.30,56.30,15 |walk |only if subzone("Menethil Keep")
 talk James Halloran##2094
 .tip He walks around this area.
 turnin Young Crocolisk Skins##484 |goto Wetlands 8.51,55.71
-accept Apprentice's Duties##471 |goto Wetlands 8.51,55.71
 turnin Daily Delivery##469 |goto Wetlands 8.51,55.71
 step
-talk Karl Boran##1242
-.tip He walks around this area.
-turnin Claws from the Deep##279 |goto Wetlands 8.31,58.53
-accept Reclaiming Goods##281 |goto Wetlands 8.31,58.53
+talk Valstag Ironjaw##2086  |goto Wetlands 10.10,56.90
+turnin Message to Menethil##27021
+step
+fly to Ironforge
 step
 Run up the stairs and enter the building |goto Ironforge,61.32,88.18,7 |walk
 talk Buliwyf Stonehand##11865
@@ -327,12 +335,6 @@ turnin An Old Colleague##1072 |goto Ironforge 72.10,51.89
 step
 talk Sara Balloo##2695
 turnin Sully Balloo's Letter##637 |goto Ironforge 63.48,67.29
-step
-Run up the stairs |goto Ironforge,51.24,9.84,5 |only if walking
-talk Gerrig Bonegrip##2786
-.tip Inside the building.
-turnin Knowledge in the Deeps##971 |goto Ironforge 50.82,5.60
-|only if guideflag("BFDflag")
 step
 Watch the dialogue
 talk Sara Balloo##2695
@@ -387,6 +389,7 @@ buy Bronze Tube##4371 |n
 Visit the Vendor |vendor Billibub Cogspinner##5519 |goto Stormwind City 55.21,7.05 |q 174 |future
 |only if itemcount(4371) == 0
 step
+fly to Stormwind
 talk Collin Mauren##4078
 turnin A Scroll from Mauren##1075 |goto Stormwind City 43.09,80.38
 step
@@ -397,7 +400,7 @@ turnin Heartswood##1738 |goto Stormwind City 25.26,78.56
 accept The Binding##1739 |goto Stormwind City 25.26,78.56
 |only if Warlock
 step
-use the Heartswood Core##6913
+use Heartswood Core##6913
 .tip Use it while standing on the pink symbol on the ground.
 .tip Further downstairs inside the building, inside the crypt.
 kill Summoned Succubus##5677 |q 1739/1 |goto Stormwind City 25.11,77.46

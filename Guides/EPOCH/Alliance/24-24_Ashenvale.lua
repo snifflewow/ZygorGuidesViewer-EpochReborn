@@ -12,23 +12,20 @@ ZygorGuidesViewer:RegisterGuide(
   },
   [[
 step
-Prepare for Blackfathom Deeps
-.tip It will be a good time to start Blackfathom Deeps soon.
-.tip You should run it after this guide, roughly 45 minutes.
-.tip Start looking for a group.
-|confirm
-|only if guideflag("BFDflag")
 step
 talk Shindrell Swiftfire##3845
 turnin Pridewings of Stonetalon##1134 |goto Ashenvale 34.67,48.84
 step
+talk Sentinel Thenysil##4079  |goto Ashenvale 34.90,49.80
+accept Attack on the Foulweald##27412
+step
 talk Raene Wolfrunner##3691
 .tip Inside the building.
 accept An Aggressive Defense##1025 |goto Ashenvale 36.62,49.58
-accept Culling the Threat##1054 |goto Ashenvale 36.62,49.58
 stickystart "Kill_Foulweald_Ursas"
 stickystart "Kill_Foulweald_Totemics"
 stickystart "Kill_Foulweald_Warriors"
+stickystart "borg_amulets"
 step
 kill Foulweald Den Watcher##3746 |q 1025/1 |goto Ashenvale 50.44,61.25
 .tip Watch for patrols and respawns while in the area. |only if hardcore |notinsticky
@@ -57,6 +54,9 @@ kill 12 Foulweald Warrior##3743 |q 1025/4 |goto Ashenvale 50.44,61.25
 .tip Enemies near buildings tend to pull in groups so be prepared. |only if hardcore |notinsticky
 You can find more around [55.84,62.92]
 step
+label "borg_amulets"
+collect 15 Foulweald Amulet##63273 |q 27412/1
+step
 Enter the building |goto Ashenvale,50.12,66.47,15 |walk
 talk Sentinel Velene Starstrike##3885
 .tip Inside the building.
@@ -81,30 +81,25 @@ talk Jarrodenus##12577
 fpath Talrendis Point |goto Azshara 11.90,77.59
 |only if not hardcore
 step
+talk Sentinel Thenysil##4079  |goto Ashenvale 34.90,49.80
+turnin Attack on the Foulweald##27412
+step
 talk Raene Wolfrunner##3691
 .tip Inside the building.
 turnin An Aggressive Defense##1025 |goto Ashenvale 36.62,49.58
 step
-Follow the path up |goto Ashenvale,41.67,49.97,20 |only if walking and not subzone("Thistlefur Village")
-kill Dal Bloodclaw##3987
-.tip He looks like a grey furbolg that walks around this area.
-.tip Avoid pulling him when near buildings. |only if hardcore
-.tip Clear an area before engaging. |only if hardcore
-collect Dal Bloodclaw's Skull##5544 |q 1054/1 |goto Ashenvale 37.35,35.60
-Also check around [39.36,36.52]
-step
-talk Raene Wolfrunner##3691
-.tip Inside the building.
-turnin Culling the Threat##1054 |goto Ashenvale 36.62,49.58
-step
-Leave the Blackfathom Deeps Dungeon
-Click Here to Continue |confirm |q 971
-|only if guideflag("BFDflag")
+talk Sentinel Glynda Nal'Shea##2930  |goto Darkshore 37.70,43.40
+turnin Wanted: Grizzletooth##26208
 step
 talk Terenthis##3693
 .tip Inside the building.
 turnin Escape Through Force##994 |goto Darkshore 39.37,43.48
 |only if not hardcore
+step
+wait for rp
+talk Sentinel Selarin##3694  |goto Darkshore 39.20,43.40
+accept Trek to Ashenvale##990
+.tip only if going for loremaster down the line
 step
 Fly to Darnassus
 talk Chief Archaeologist Greywhisker##2912

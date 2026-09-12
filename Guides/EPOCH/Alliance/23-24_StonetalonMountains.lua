@@ -26,6 +26,10 @@ step
 talk Gaxim Rustfizzle##4077
 turnin On Guard in Stonetalon##1085 |goto Stonetalon Mountains 59.52,67.15
 accept A Gnome's Respite##1071 |goto Stonetalon Mountains 59.52,67.15
+step
+Follow the path up around the cliff |goto Stonetalon Mountains,60.06,70.00,40 |only if walking
+talk Kaela Shadowspear##4080
+accept Torching the Stockpiles##27414
 stickystart "Kill_Venture_Co_Loggers"
 stickystart "Kill_Venture_Co_Deforesters"
 step
@@ -39,6 +43,10 @@ You can find more around: |notinsticky
 [70.97,43.13]
 [73.02,49.47]
 [74.68,55.44]
+step
+.tip TODO: find use id for torch in backpack 
+burn 8 Burned crates |q 27414/1
+.tip TODO: They are mainly around the logging house, fix coords
 step
 label "Kill_Venture_Co_Loggers"
 kill 10 Venture Co. Logger##3989 |q 1071/1 |goto Stonetalon Mountains 60.44,52.78
@@ -78,6 +86,9 @@ turnin A Gnome's Respite##1071 |goto Stonetalon Mountains 59.52,67.15
 accept An Old Colleague##1072 |goto Stonetalon Mountains 59.52,67.15
 accept A Scroll from Mauren##1075 |goto Stonetalon Mountains 59.52,67.15
 step
+talk Kaela Shadowspear##4080  |goto Stonetalon Mountains 59.90,66.80
+turnin Torching the Stockpiles##27414
+step
 Kill Pridewing enemies around this area
 .tip Kill: Pridewing Wyvern##4012, Pridewing Consort##4014, Pridewing Skyhunter##4013, Young Pridewing##4011, Pridewing Patriarch##4015
 .tip They look like wyverns.
@@ -93,10 +104,5 @@ turnin Journey to Stonetalon Peak##1056 |goto Stonetalon Mountains 37.10,8.10
 step
 talk Teloren##4407
 fpath Stonetalon Peak |goto Stonetalon Mountains 36.44,7.18
-step
-cast Teleport: Moonglade##18960
-trainer Loganaar##12042 |goto Moonglade/0 52.50,40.54 |q 1134
-.tip Go to Moonglade and train your spells, then hearth once it is off cooldown.
-|only if Druid and C_Container.GetItemCooldown(6948) <= 100
 ]]
 )
