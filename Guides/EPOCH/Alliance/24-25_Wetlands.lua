@@ -390,8 +390,12 @@ Visit the Vendor |vendor Billibub Cogspinner##5519 |goto Stormwind City 55.21,7.
 |only if itemcount(4371) == 0
 step
 fly to Stormwind
-talk Collin Mauren##4078
-turnin A Scroll from Mauren##1075 |goto Stormwind City 43.09,80.38
+talk Bernard Gump##1302  |goto Stormwind City 69.10,71.90
+buy Red Rose##3419
+.tip this will be needed for a later quest
+step
+talk Collin Mauren##4078  |goto Stormwind City 53.00,86.60
+turnin A Scroll from Mauren##1075 
 step
 Enter the building |goto Stormwind City,29.14,74.17,10 |walk
 talk Gakin the Darkbinder##6122
@@ -460,5 +464,8 @@ talk Daphne Stilwell##6182
 turnin The Tome of Valor##1651 |goto Westfall 41.68,89.09
 accept The Tome of Valor##1652 |goto Westfall 41.68,89.09
 |only if Paladin
+step
+fly to redridge
+go to the bridge to Duskwood |goto Redridge Mountains 7.1,89.4 |c
 ]]
 )

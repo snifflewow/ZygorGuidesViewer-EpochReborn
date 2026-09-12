@@ -19,21 +19,12 @@ talk Malissa##3135
 Visit the Vendor |vendor Malissa##3135 |goto Duskwood 79.44,44.44 |q 66 |future
 |only if Rogue
 step
+Follow the Road down to Darkshire
 Enter the building |goto Duskwood,75.55,45.37,10 |walk
 talk Madame Eva##265
 .tip She walks around this area inside the building.
 accept The Legend of Stalvan##66 |goto Duskwood 75.82,45.29
 accept The Totem of Infliction##101 |goto Duskwood 75.82,45.29
-step
-talk Allison##45731
-accept A Matter of Life and Death##26711 |goto Duskwood 77.7,52.2
-.tip Look for small flowers around Duskwood as you quest.
-.tip They look like tiny flowers on the ground and are easy to miss.
-step
-collect 8 Brightwood Bloom##62530 |q 26711/1 |goto Duskwood 70,50
-.tip These are small flowers scattered throughout Duskwood.
-.tip You can collect them while doing other quests in the zone.
-.tip Check around the roads and open areas.
 step
 talk Steven Black##10062
 .tip Stable your permanent pet.
@@ -132,13 +123,19 @@ talk Viktori Prism'Antras##276
 turnin Look To The Stars##174 |goto Duskwood 79.80,48.02
 accept Look To The Stars##175 |goto Duskwood 79.80,48.02
 step
+talk Sarae Dewlight##45731  |goto Blasted Lands 0.70,4.00
+accept Life In Death##26711 |goto Duskwood 77.7,52.2
+.tip Look for small flowers around Duskwood as you quest.
+.tip They look like tiny flowers on the ground and are easy to miss.
+step
 Enter the building |goto Duskwood,81.67,59.14,10 |walk
 talk Blind Mary##302
 .tip She walks around inside the building.
-turnin Look To The Stars##175 |goto Duskwood 81.99,59.09
+gturnin Look To The Stars##175 |goto Duskwood 81.99,59.09
 accept Look To The Stars##177 |goto Duskwood 81.99,59.09
 stickystart "Kill_Skeletal_Mages"
 stickystart "Kill_Skeletal_Warriors"
+stickystart "duskwood_blooms"
 step
 Enter the building |goto Duskwood,80.33,71.10,10 |walk
 kill Insane Ghoul##511
@@ -158,17 +155,29 @@ kill 8 Skeletal Warrior##48 |q 56/1 |goto Duskwood 79.42,70.31
 .tip Watch for patrols and respawns while in the area. |only if hardcore |notinsticky
 .tip Skeletal mages may aggro from a decent distance. |only if hardcore |notinsticky
 step
-Kill enemies around this area
-.tip You should already be very close to reaching level 26.
-.tip Watch for patrols and respawns while in the area. |only if hardcore |notinsticky
-.tip Skeletal mages may aggro from a decent distance. |only if hardcore |notinsticky
-ding 26 |goto Duskwood 79.42,70.31
+talk Jack Archer##45734  |goto Duskwood 72.40,56.80
+.tip He is inside the barn
+accept Until Death Do Us Part##26718
+step
+talk Watcher Dodds##888  |goto Duskwood 45.10,67.00
+accept Eight-Legged Menaces##245
+step
+talk Brink Spannercrank##46334  |goto Duskwood 44.90,67.60
+accept Commission for Watcher Dodds##28476
+.tip only if you have  first aid and you've learnt anti-venom
 step
 Follow the road |goto Duskwood,72.18,59.00,50 |only if walking and (subzone("Tranquil Gardens Cemetery") or subzone("Darkshire"))
 talk Jitters##288
 .tip He walks around this area.
 turnin Raven Hill##163 |goto Duskwood 18.16,56.51
 accept Jitters' Growling Gut##5 |goto Duskwood 18.16,56.51
+step 
+kill 15 Pygmy Venom Web Spider##539 |q 245/1  |goto Duskwood 13.20,70.30
+.tip they are along the west coast of Duskwood
+collect 10 Glistening Spider Silk##62539 |q 26718/2
+step
+collect 10 Pristine Pearl##62540 |q 26718/2
+.tip these are in the river between Duskwood and Westfall/Elwynn forest
 step
 talk Sven Yorgen##311
 turnin Deliveries to Sven##164 |goto Duskwood 7.78,34.07
@@ -212,6 +221,12 @@ collect 6 Gooey Spider Leg##2251 |goto Duskwood 31.85,35.93 |q 93 |future
 You can find more around: |notinsticky
 [28.46,48.96]
 [32.20,55.11]
+step
+label "duskwood_blooms"
+collect 8 Brightwood Bloom##62530 |q 26711/1 |goto Duskwood 70,50
+.tip These are small flowers scattered throughout Duskwood.
+.tip You can collect them while doing other quests in the zone.
+.tip Check around the roads and open areas.
 step
 Leave the crypt |goto Duskwood,23.59,34.89,15 |walk |only if subzone("Dawning Wood Catacombs") and _G.IsIndoors()
 talk Lars##893
@@ -291,6 +306,10 @@ talk Viktori Prism'Antras##276
 .tip Inside the building.
 turnin Look To The Stars##177 |goto Duskwood 79.80,48.02
 step
+talk Sarae Dewlight##45731  |goto Blasted Lands 0.70,4.00
+turnin Life In Death##26711
+accept Life In Death##26712
+step
 Enter the building |goto Duskwood,81.68,59.13,10 |walk
 talk Blind Mary##302
 .tip She walks around inside the building.
@@ -303,10 +322,41 @@ talk Madame Eva##265
 turnin Return the Comb##154 |goto Duskwood 75.81,45.29
 accept Deliver the Thread##157 |goto Duskwood 75.81,45.29
 step
+talk Jack Archer##45734  |goto Duskwood 72.40,56.80
+turnin Until Death Do Us Part##26718
+accept Until Death Do Us Part##26719
+step
+talk Jack Archer##45734  |goto Duskwood 72.40,56.80
+turnin Until Death Do Us Part##26719
+accept Until Death Do Us Part##26720
+step
+Head to the small farm house |goto 70,57.2
+use Letter to Faye Underhill##62541 |q 26720/1
+step
+talk Jack Archer##45734  |goto Duskwood 72.40,56.80
+turnin Until Death Do Us Part##26720
+accept Until Death Do Us Part##26721
+step
+talk Jack Archer##45734  |goto Duskwood 72.40,56.80
+turnin Until Death Do Us Part##26721
+accept Until Death Do Us Part##26722
+step
+kill Jack Archer##45734 |q 26722/1 |goto Duskwood 72.40,56.80
+talk Faye Underhill##45733  |goto Duskwood 69.50,57.50
+turnin Until Death Do Us Part##26722
+step
 click Mound of loose dirt
 .tip Be careful, there are stealthed enemies around this area.
 turnin Sven's Revenge##95 |goto Duskwood 49.86,77.70
 accept Sven's Camp##230 |goto Duskwood 49.86,77.70
+step
+talk Watcher Dodds##888  |goto Duskwood 45.10,67.00
+turnin Eight-Legged Menaces##245
+step
+if you have a small venom sack from killing spiders create anti-venom
+talk Brink Spannercrank##46334  |goto Duskwood 44.90,67.60
+turnin Commission for Watcher Dodds##28476
+.tip if you don't have one so far you can just abandon the quest
 step
 Follow the road |goto Duskwood,43.59,65.05,40 |only if walking and subzone("The Yorgen Farmstead")
 talk Jitters##288
@@ -323,35 +373,28 @@ turnin Deliver the Thread##157 |goto Duskwood 28.11,31.47
 accept Zombie Juice##158 |goto Duskwood 28.11,31.47
 step
 Enter the building |goto Elwynn Forest,42.95,65.64,10 |walk
-talk Innkeeper Farley##295
+talk Innkeeper Farley##295  |goto Elwynn Forest 38.10,68.10
 .tip Inside the building.
-turnin The Legend of Stalvan##69 |goto Elwynn Forest 43.77,65.80
-accept The Legend of Stalvan##70 |goto Elwynn Forest 43.77,65.80
+turnin The Legend of Stalvan##69
+accept The Legend of Stalvan##70
 step
 click Storage Chest
 .tip Upstairs inside the building.
-collect An Undelivered Letter##910 |q 70/1 |goto Elwynn Forest 44.29,65.82
+collect An Undelivered Letter##910 |q 70/1 |goto Elwynn Forest 38.3,67.8
 step
-Leave the building |goto Elwynn Forest,42.95,65.64,10 |walk |only if subzone("Lion's Pride Inn")
-talk Caretaker Folsom##297
-turnin The Legend of Stalvan##70 |goto Stormwind City 29.58,61.93
-accept The Legend of Stalvan##72 |goto Stormwind City 29.58,61.93
+Head to stormwind
+talk Caretaker Folsom##297  |goto Stormwind City 42.50,72.40
+turnin The Legend of Stalvan##70
+accept The Legend of Stalvan##72
 step
-click Sealed Crate
-turnin The Legend of Stalvan##72 |goto Stormwind City 29.46,61.58
-accept The Legend of Stalvan##74 |goto Stormwind City 29.46,61.58
+click Sealed Crate |goto Stormwind City 42.5,72.1
+turnin The Legend of Stalvan##72
+accept The Legend of Stalvan##74
 step
-Enter the building |goto Stormwind City,29.15,74.15,10 |walk
+Enter the building |goto Stormwind City 42.3,81.7
 talk Zardeth of the Black Claw##1435
 .tip Downstairs inside the building.
 accept A Noble Brew##335 |goto Stormwind City 26.45,78.66
-step
-Leave the building |goto Stormwind City,29.15,74.15,10 |walk |only if subzone("The Slaughtered Lamb")
-Run through Duskwood |goto Duskwood,77.7,52.2,10 |walk
-talk Allison##45731
-turnin A Matter of Life and Death##26711 |goto Duskwood 77.7,52.2
-accept A Matter of Life and Death##26712 |goto Duskwood 77.7,52.2
-.tip This quest chain will be completed later. Set aside the items you've collected and continue with other quests.
 step
 Enter the building |goto Duskwood,75.55,45.37,10 |walk
 talk Madame Eva##265
@@ -407,6 +450,7 @@ turnin Finding the Shadowy Figure##453 |goto Duskwood 18.14,56.52
 accept Return to Sven##268 |goto Duskwood 18.14,56.52
 stickystart "Kill_Skeletal_Fiends"
 stickystart "Kill_Skeletal_Horrors"
+stickystart "bone_dust"
 step
 Kill Skeletal enemies around this area
 .tip Only Skeletal Fiends and Skeletal Horrors will drop the quest item.
@@ -432,6 +476,9 @@ kill 15 Skeletal Horror##202 |q 57/2 |goto Duskwood 15.20,44.97
 You can find more around: |notinsticky
 [21.50,47.70]
 [22.93,43.21]
+step
+label "bone_dust"
+collect 5 Fresh Bone Powder##62531 |q 26712/1
 step
 Kill enemies around this area
 .tip You should already be level 27, or very close.
@@ -497,23 +544,6 @@ talk Commander Althea Ebonlocke##264
 .tip She walks around this area.
 turnin The Night Watch##57 |goto Duskwood 73.60,46.90
 step
-Optional Route Change
-.tip You can opt to do The Stockades around level 28 instead of grinding.
-.tip This will mean slower leveling but it will be more fun and potentially give you gear upgrades.
-.tip If you choose to do The Stockades, we will say when to accept and turnin dungeon quests that are worth doing in your route.
-.tip We will also say when it is a good time to do the dungeon.
-NOTE:
-.tip This feature is currently experimental and may result in a full quest log. If this happens, please submit a feedback report so we can fix it!
-.tip If you have a full quest log, we recommend abandoning any dungeon quests that can be shared by your party members later.
-Click Here if you'd like to run The Stockades later |confirm Stockflag
-Click Here if you'd prefer to grind |confirm
-step
-Enter the building |goto Duskwood,72.88,46.83,5 |walk
-talk Councilman Millstipe##270
-.tip He walks around inside the building.
-accept Crime and Punishment##377 |goto Duskwood 71.92,47.79
-|only if guideflag("Stockflag")
-step
 talk Gavin Gnarltree##225
 .tip He walks around this area.
 buy Merciless Axe##12249 |n
@@ -538,12 +568,7 @@ buy Broad Bladed Knife##12247 |n
 Visit the Vendor |vendor Gavin Gnarltree##225 |goto Duskwood 73.60,50.04 |q 159
 |only if Rogue and itemcount(12247) == 0
 step
-collect 5 Fresh Bone Powder##62531 |q 26712/1 |goto Duskwood 75,42
-.tip You can find these on the undead creatures in the Duskwood graveyards.
-.tip Collect them from any undead in the zone.
-.tip You can also collect them while doing other quests.
-step
-talk Allison##45731
-turnin A Matter of Life and Death##26712 |goto Duskwood 77.7,52.2
+talk Sarae Dewlight##45731  |goto Blasted Lands 0.70,4.0
+turnin Life In Death##26712 |goto Duskwood 77.7,52.2
 ]]
 )
